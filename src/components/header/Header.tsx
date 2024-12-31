@@ -1,5 +1,8 @@
 import React, { FC } from 'react';
 import logo from "../../images/logo.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import "./Header.scss";
 
 export const Header: FC = () => {
     return (
@@ -26,7 +29,13 @@ export const Header: FC = () => {
                         Контакти
                     </span>
                 </div>
-                <div className="header__wrap-phone"></div>
+                <div className="header__wrap-phone">
+                    <FontAwesomeIcon 
+                        className="header__wrap-phone-img" 
+                        icon={faPhoneVolume} 
+                    />
+                    <span>(097) 058-29-18</span>
+                </div>
             </div>
         </div>
     )
