@@ -48,7 +48,7 @@
                     h2 {
                         font-size: 17px;
                         color: #d8d5d5;
-                        font-family: "Lilita One", serif;
+                        font-family: "Philosopher", serif;
                         text-transform: uppercase;
                         letter-spacing: 1px;
                         text-align: center;
@@ -76,7 +76,7 @@
                     h2 {
                         margin: 5px 0;
                         font-size: 18px;
-                        font-family: "Lilita One", serif;
+                        font-family: "Philosopher", serif;
                         text-transform: uppercase;
                     }
                     
@@ -84,26 +84,26 @@
                         padding: 0 5px;
                         font-size: 16px;
                         letter-spacing: 1px;
-                        font-family: "Lilita One", serif;
+                        font-family: "Philosopher", serif;
                     }
                     
                     button {
                         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
-                        font-family: "Lilita One", serif;
+                        font-family: "Philosopher", serif;
                         margin-top: 10px;
                         font-size: 20px;
                         padding: 5px 15px;
-                        background-color: #d3d1d1;
+                        background-color: #2b2b2b;
                         border: none;
                         outline: none;
-                        color: #2b2b2b;
+                        color: #fff;
                         cursor: pointer;
                         border-radius: 7px;
                         letter-spacing: 1px;
                         transition: background-color 0.5s ease;
                         &:hover {
-                            background-color: #2b2b2b;
-                            color: #fff;
+                            background-color: #d3d1d1;
+                            color: #2b2b2b;
                         }
                     }
                 }

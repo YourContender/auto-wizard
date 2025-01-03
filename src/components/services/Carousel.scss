@@ -1,0 +1,55 @@
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &::after {
+      font-size: 20px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: -20px; // Настройте по своему дизайну
+  }
+
+  .swiper-button-next {
+    right: -20px; // Настройте по своему дизайну
+  }
+
+  .carousel-item {
+    text-align: center;
+
+    .carousel-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .carousel-title {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .carousel-description {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+}
