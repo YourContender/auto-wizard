@@ -5,6 +5,7 @@ import { Preview } from './components/preview/Preview.jsx';
 import Carousel from './components/carousel/Carousel.jsx';
 import { items } from './data.js';
 import './App.css';
+import { Feedback } from './components/feedback/Feedback.jsx';
 
 export function App() {
     
@@ -15,6 +16,7 @@ export function App() {
             <Shares/>
             <Preview/>
             <Carousel items={items} />
+            <Feedback/>
         </>
     )
 }

@@ -13,7 +13,7 @@ const Carousel = ({ items }) => {
     return (
         <div className="carousel-container">
             <div className="carousel-container">
-                <h1>Основні напрямки нашої роботи:</h1>
+                <h1>Послуги автосервісу:</h1>
             </div>
             <Swiper
                 modules={[Pagination, Autoplay]}
