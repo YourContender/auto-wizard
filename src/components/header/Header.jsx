@@ -1,10 +1,9 @@
-import React, { FC } from 'react';
 import logo from "../../images/logo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import "./Header.scss";
 
-export const Header: FC = () => {
+export const Header = () => {
     return (
         <div className="header">
             <div className="header__wrap">

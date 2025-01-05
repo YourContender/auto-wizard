@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
+import React from 'react';
 import service from "../../images/svg/service.svg";
 import diagnostic from "../../images/svg/auto-repair-svgrepo-com (3).svg";
 import volonter from "../../images/svg/white-heart.svg";
 import "./Shares.scss";
 
-export const Shares: FC = () => {
+export const Shares = () => {
     return (
         <div className="shares">
             <div className="shares__container">

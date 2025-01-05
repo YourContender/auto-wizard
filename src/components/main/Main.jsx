@@ -1,7 +1,6 @@
-import React, { FC } from 'react';
 import "./Main.scss";
 
-export const Main: FC = () => {
+export const Main = () => {
     return (
         <div className="main">
             <div className="main_container">
