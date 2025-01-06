@@ -6,6 +6,23 @@ import service5 from "./images/slider/5.jpg";
 import service6 from "./images/slider/6.jpg";
 import service8 from "./images/slider/8.jpg";
 
+import audi from "./images/car-models/audi.png";
+import bmw from "./images/car-models/bmw.png";
+import chevrolet from "./images/car-models/chevrolet.png";
+import ford from "./images/car-models/ford.png";
+import honda from "./images/car-models/honda.png";
+import hyundai from "./images/car-models/hyundai.png";
+import mazda from "./images/car-models/mazda.png";
+import mercedes from "./images/car-models/mercedes.png";
+import mitsubishi from "./images/car-models/mitsubishi.png";
+import nissan from "./images/car-models/nissan.png";
+import seat from "./images/car-models/seat.png";
+import skoda from "./images/car-models/skoda.png";
+import subaru from "./images/car-models/subaru.png";
+import suzuki from "./images/car-models/suzuki.png";
+import toyota from "./images/car-models/toyota.png";
+import volkswagen from "./images/car-models/volkswagen.png";
+
 export const items = [
 	{
 		image: { service5 },
@@ -42,4 +59,23 @@ export const items = [
 		description:
 			"Паливна система - забезпечує правильну роботу двигуна та оптимальне використання палива, тому здоров'я паливної напряму пов'язане зі здоров'ям двигуна. ",
 	},
+];
+
+export const carModels = [
+	audi,
+	bmw,
+	chevrolet,
+	ford,
+	honda,
+	hyundai,
+	mazda,
+	mercedes,
+	mitsubishi,
+	nissan,
+	seat,
+	skoda,
+	subaru,
+	suzuki,
+	toyota,
+	volkswagen,
 ];

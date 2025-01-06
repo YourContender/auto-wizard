@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "./Carousel.scss";
 
 const Carousel = ({ items }) => {
-    console.log("items: ", items);
+    // console.log("items: ", items);
     
     return (
         <div className="carousel-container">
