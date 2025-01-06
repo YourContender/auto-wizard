@@ -35,7 +35,7 @@ const Carousel = ({ items }) => {
                       slidesPerView: 3,
                     },
                 }}
-                pagination={{ dynamicBullets: true }}
+                pagination={false}
             >
                 {items.map((item, index) => (
                     <SwiperSlide key={index}>

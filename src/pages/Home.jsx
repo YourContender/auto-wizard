@@ -8,6 +8,7 @@ import { Feedback } from '../components/feedback/Feedback'
 import { items, carModels } from '../data'
 import { GoogleMap } from '../components/google-map/GoogleMap'
 import { CarModels } from '../components/car-models/CarModels'
+import { Footer } from '../components/footer/Footer'
 
 export const Home = () => {
     return (
@@ -20,6 +21,7 @@ export const Home = () => {
             <Feedback/>
             <CarModels items={carModels}/>
             <GoogleMap/>
+            <Footer/>
         </>
     )
 }

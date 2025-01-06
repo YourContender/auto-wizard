@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot, faClock, faPhone } from '@fortawesome/free-solid-svg-icons';
+import "./Footer.scss";
 
 export const Footer = () => {
     return (
@@ -27,16 +30,25 @@ export const Footer = () => {
                 <div className="footer__container-contact">
                     <h4>Контакти</h4>
                     <div className="footer__container-services-list">
-                        <div className="footer__container-services-list-item">
-                            ИКОНКА
+                        <div className="footer__container-contact-list-item">
+                            <FontAwesomeIcon 
+                                className="footer-icon" 
+                                icon={faLocationDot} 
+                            />
                             <span>м. Дніпро, пров. Самаркандський, 2</span>
                         </div>
-                        <div className="footer__container-services-list-item">
-                            ИКОНКА
+                        <div className="footer__container-contact-list-item">
+                            <FontAwesomeIcon 
+                                className="footer-icon" 
+                                icon={faClock} 
+                            />
                             <span>ПН-ПТ з 8:00 до 18:00</span>
                         </div>
-                        <div className="footer__container-services-list-item">
-                            ИКОНКА
+                        <div className="footer__container-contact-list-item">
+                            <FontAwesomeIcon 
+                                className="footer-icon" 
+                                icon={faPhone} 
+                            />
                             <span>(097) 058-29-18</span>
                         </div>
                     </div>

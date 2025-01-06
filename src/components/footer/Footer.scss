@@ -1,0 +1,42 @@
+.footer {
+    width: 100%;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    &-icon {
+        font-size: 20px;
+    }
+    &__container {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        &-info, &-services, &-contact {
+            width: 30%;
+            font-family: "Montserrat", serif;
+            &-list {
+                display: flex;
+                flex-direction: column;
+                span {
+                    margin: 5px 0;
+                    padding-left: 10px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                &-item {
+                    margin: 5px 0;
+                    padding-left: 10px;
+                }
+            }
+            h4 {
+                text-transform: uppercase;
+                border-bottom: 1px solid #ffffffb7;
+                padding-left: 10px;
+                font-size: 18px;
+            }
+        }
+    }
+}

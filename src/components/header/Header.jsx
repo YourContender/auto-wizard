@@ -2,6 +2,7 @@ import logo from "../../images/logo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
@@ -12,21 +13,21 @@ export const Header = () => {
                     <span className="header__wrap-logo-text">AutoWizard</span>
                 </div>
                 <div className="header__wrap-list">
-                    <span className="header__wrap-list-item">
+                    <Link to="/" className="header__wrap-list-item">
                         Головна
-                    </span>
-                    <span className="header__wrap-list-item">
+                    </Link>
+                    <Link to="/about" className="header__wrap-list-item">
                         Про нас
-                    </span>
-                    <span className="header__wrap-list-item">
+                    </Link>
+                    <Link to="/service" className="header__wrap-list-item">
                         Послуги
-                    </span>
-                    <span className="header__wrap-list-item">
+                    </Link>
+                    <Link to="/price" className="header__wrap-list-item">
                         Ціни
-                    </span>
-                    <span className="header__wrap-list-item">
+                    </Link>
+                    <Link to="/contact" className="header__wrap-list-item">
                         Контакти
-                    </span>
+                    </Link>
                 </div>
                 <div className="header__wrap-phone">
                     <FontAwesomeIcon 
