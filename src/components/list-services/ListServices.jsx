@@ -2,8 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faClock, faPhone } from '@fortawesome/free-solid-svg-icons';
 import "./ListServices.scss";
+import { Link } from 'react-router-dom';
 
-export const ListServices = ({ list }) => {
+export const ListServices = ({ list, setCurrService }) => {
+    const handleClick = (item) => {
+        setCurrService(item);
+    }
+
     return (
         <div className="list-services">
             <div className="list-services__bg">
@@ -26,7 +31,12 @@ export const ListServices = ({ list }) => {
                                     </div>
                                     
                                     <div className="list-services-btn">
-                                        <button>Детальніше</button>
+                                        <Link to={item.path}
+                                            onClick={() => handleClick(item)}
+                                            className="list-services-btn-link"
+                                        >
+                                            Детальніше
+                                        </Link>
                                     </div>
                                 </div>
                             )

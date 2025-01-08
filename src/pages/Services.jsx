@@ -5,11 +5,11 @@ import { ListServices } from "../components/list-services/ListServices";
 import { GoogleMap } from "../components/google-map/GoogleMap";
 import { listServices } from "../data.js";
 
-export const Services = () => {
+export const Services = ({ setCurrService }) => {
     return (
         <div>
             <Header/>
-            <ListServices list={listServices}/>
+            <ListServices list={listServices} setCurrService={setCurrService}/>
             <GoogleMap/>
             <Footer/>    
         </div>

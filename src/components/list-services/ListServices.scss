@@ -61,8 +61,10 @@
                     padding-left: 15px;
                     display: flex;
                     justify-content: center;
-                    button {
+                    &-link {
                         padding: 10px 30px;
+                        text-decoration: none;
+                        color: #fff;
                         font-size: 18px;
                         border-radius: 10px;
                         border: none;
