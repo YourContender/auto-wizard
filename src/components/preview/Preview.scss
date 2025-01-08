@@ -6,9 +6,9 @@
         width: 1200px;
         margin: 50px 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         &-left {
-            width: 50%;
+            width: 900px;
             &-title {
                 h1 {
                     font-family: "Montserrat", serif;
@@ -71,8 +71,9 @@
         }
         &-right {
             margin-left: 60px;
-            width: 30%;
+            width: 500px;
             margin-top: 50px;
+            // display: none;
             &-title {
                 h2 {
                     font-family: "Montserrat", serif;
@@ -88,7 +89,7 @@
                 }
             }
             img {
-                width: 300px;
+                width: 100%;
             }
 
         }

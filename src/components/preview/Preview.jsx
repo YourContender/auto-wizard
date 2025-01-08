@@ -1,6 +1,6 @@
 import React from 'react';
 import preview1 from "../../images/preview/preview1.jpg";
-import preview2 from "../../images/preview/preview2.jpg";
+import preview2 from "../../images/preview/1.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import "./Preview.scss";

@@ -6,6 +6,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Carousel.scss";
+import { Link } from "react-router-dom";
 
 const Carousel = ({ items }) => {
     // console.log("items: ", items);
@@ -53,6 +54,9 @@ const Carousel = ({ items }) => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <div className="carousel-btn">
+                <Link className="carousel-btn-road" to="/service">Перейти до всіх послуг</Link>
+            </div>
         </div>
     );
 };
