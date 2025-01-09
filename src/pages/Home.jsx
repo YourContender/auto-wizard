@@ -20,7 +20,7 @@ export const Home = () => {
             <Carousel items={items} />
             <Feedback/>
             <CarModels items={carModels}/>
-            <GoogleMap/>
+            <GoogleMap width="100%" height="600px"/>
             <Footer/>
         </>
     )

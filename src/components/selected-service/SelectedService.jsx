@@ -2,6 +2,7 @@ import React from 'react';
 import { listServices, advantageForSelectedService } from '../../data';
 import "./SelectedService.scss";
 import { Link } from 'react-router-dom';
+import { Advantage } from '../advantage/Advantage';
 
 export const SelectedService = ({ title }) => {
     const currentService = listServices.filter(item => item.title === title)
@@ -11,7 +12,12 @@ export const SelectedService = ({ title }) => {
             <div className="selected__bg">
                 <div className="selected__bg-title">
                     <h1>{currentService[0].service}</h1>
-                    <Link className="selected__bg-title-link" to="/service">Послуги / <p>{title}</p></Link>
+                    <Link 
+                        className="selected__bg-title-link" 
+                        to="/"
+                    >
+                        Головна / <Link className="selected__bg-title-link" to="/service"> Послуги </Link> / <p>{title}</p>
+                    </Link>
                 </div>
             </div>
             <div className="selected__container">
@@ -30,26 +36,7 @@ export const SelectedService = ({ title }) => {
                         )
                     })
                 }
-
-                <div className="selected__container-advantage">
-                    <div className="selected__container-advantage-title">
-                        <h2>Переваги нашого автосервісу</h2>
-                    </div>
-                    <div className="selected__container-advantage-content">
-                        {
-                            advantageForSelectedService.map((item, index) => {
-                                return (
-                                    <div className="selected__container-advantage-content-item" key={index}>
-                                        <div className="selected-icon">
-                                            <img src={item.image} alt="" />
-                                        </div>
-                                        <span>{item.text}</span>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
+                <Advantage/>
 
                 <div className="selected__container-table">
                     <table>

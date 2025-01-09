@@ -14,6 +14,7 @@ export const ListServices = ({ list, setCurrService }) => {
             <div className="list-services__bg">
                 <div className="list-services__bg-title">
                     <h1>Послуги нашого автосервісу</h1>
+                    <Link className="list-services__bg-title-link" to="/">Головна / <p>Послуги</p></Link>
                 </div>
             </div>
             <div className="list-services__container">

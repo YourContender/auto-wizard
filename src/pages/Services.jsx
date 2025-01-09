@@ -10,7 +10,7 @@ export const Services = ({ setCurrService }) => {
         <div>
             <Header/>
             <ListServices list={listServices} setCurrService={setCurrService}/>
-            <GoogleMap/>
+            <GoogleMap width="100%" height="600px"/>
             <Footer/>    
         </div>
     )

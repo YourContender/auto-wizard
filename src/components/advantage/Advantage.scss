@@ -1,0 +1,39 @@
+.advantage {
+    &-title {
+        h2 {
+            color: #2b2b2b;
+            font-family: "Montserrat", serif;
+            margin: 45px 0;
+        }
+    }
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        &-item {
+            display: flex;
+            width: 350px;
+            align-items: center;
+            .advantage-icon {
+                width: 90px;
+                height: 90px;
+                background-color: #2b2b2b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                img {
+                    width: 50px;
+                }
+            }
+            span {
+                color: #2b2b2b;
+                margin-left: 20px;
+                font-family: "Montserrat", serif;
+                font-size: 20px;
+                width: 240px;
+            }
+        }
+    }
+}

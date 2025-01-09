@@ -3,7 +3,7 @@ import { Home } from './pages/Home.jsx';
 import { Prices } from './pages/Prices.jsx';
 import { Services } from './pages/Services.jsx';
 import { About } from './pages/About.jsx';
-import { Contact } from './pages/Contact.jsx';
+import { ContactPage } from './pages/ContactPage.jsx';
 import { ScrollToTop } from './helpers/ScrollToTop.jsx';
 import './App.css';
 import { useState } from 'react';
@@ -23,7 +23,7 @@ export function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} /> 
-                <Route path="/contact" element={<Contact />} /> 
+                <Route path="/contact" element={<ContactPage />} /> 
                 <Route path="/price" element={<Prices />} /> 
                 <Route path="/service" element={<Services setCurrService={setCurrentServiceFormList}/>} /> 
 
