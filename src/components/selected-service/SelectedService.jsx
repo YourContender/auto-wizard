@@ -3,6 +3,7 @@ import { listServices, advantageForSelectedService } from '../../data';
 import "./SelectedService.scss";
 import { Link } from 'react-router-dom';
 import { Advantage } from '../advantage/Advantage';
+import { Contact } from '../contact/Contact';
 
 export const SelectedService = ({ title }) => {
     const currentService = listServices.filter(item => item.title === title)
@@ -37,6 +38,14 @@ export const SelectedService = ({ title }) => {
                     })
                 }
                 <Advantage/>
+
+                <div className="selected__container-title">
+                    <h2>Вартість послуг</h2>
+                    <span>
+                        Ціни вказані для ознайомлення з ціновою політикою автосервісу та не включають ПДВ. 
+                        Точну вартість робіт ви можете дізнатися за телефоном або приїхавши до нас на СТО
+                    </span>
+                </div>
 
                 <div className="selected__container-table">
                     <table>

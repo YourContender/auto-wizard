@@ -13,6 +13,9 @@ import { RepairKPP } from './pages/pages-services/RepairKPP.jsx';
 import { CoolingSystem } from './pages/pages-services/CoolingSystem.jsx';
 import { RepairMotor } from './pages/pages-services/RepairMotor.jsx';
 import { FuelSystem } from './pages/pages-services/FuelSystem.jsx';
+import { ClutchPage } from './pages/pages-services/ClutchPage.jsx';
+import { SteeringPage } from './pages/pages-services/SteeringPage.jsx';
+import { PendantPage } from './pages/pages-services/PendantPage.jsx';
 
 export function App() {   
     const [currentServiceFromList, setCurrentServiceFormList] = useState([]);
@@ -33,6 +36,9 @@ export function App() {
                 <Route path="/service/sistema-oholodzhennya" element={<CoolingSystem />} /> 
                 <Route path="/service/dvigun" element={<RepairMotor />} /> 
                 <Route path="/service/palivna-sistema" element={<FuelSystem />} /> 
+                <Route path="/service/sczeplennya" element={<ClutchPage />} /> 
+                <Route path="/service/ruleve-keruvannya" element={<SteeringPage />} /> 
+                <Route path="/service/pidviska" element={<PendantPage />} /> 
             </Routes>
         </Router>
     )

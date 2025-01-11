@@ -7,6 +7,9 @@ import './DropdownTable.scss';
 export const DropdownTable = ({ data, title, descr }) => {
     const [openSection, setOpenSection] = useState(null);
 
+    console.log(data);
+    
+
     const toggleSection = (section) => {
         setOpenSection(openSection === section ? null : section);
     };
@@ -29,7 +32,7 @@ export const DropdownTable = ({ data, title, descr }) => {
                         className="dropdown-title"
                         onClick={() => toggleSection(index)}
                     >
-                        {section.title}
+                        {section.service}
                         <FontAwesomeIcon 
                             className="footer-icon" 
                             icon={faPlus} 
@@ -45,7 +48,7 @@ export const DropdownTable = ({ data, title, descr }) => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {section.items.map((item) => (
+                                {section.itemsForTable.map((item) => (
                                     <tr key={item.id}>
                                         <td>{item.id}</td>
                                         <td>{item.name}</td>

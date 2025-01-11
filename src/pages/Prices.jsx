@@ -3,7 +3,7 @@ import { Header } from '../components/header/Header'
 import { Footer } from '../components/footer/Footer'
 import { DropdownTable } from '../components/dropdown-table/DropdownTable'
 import { 
-    dataTable, 
+    listServices, 
     titleForDropdownTableInPriceComponent,
     descrForDropdownTableInPriceComponent
 } from '../data'
@@ -13,7 +13,7 @@ export const Prices = () => {
         <div>
             <Header/>
             <DropdownTable 
-                data={dataTable}
+                data={listServices}
                 title={titleForDropdownTableInPriceComponent}   
                 descr={descrForDropdownTableInPriceComponent} 
             />

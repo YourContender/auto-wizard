@@ -41,6 +41,18 @@
     }
     &__container {
         width: 1200px;
+        &-title {
+            color: #2b2b2b;
+            h2 {
+                font-family: "Montserrat", serif;
+                margin:35px 0;
+                font-size: 22px;
+            }
+            span {
+                font-family: "Montserrat", serif;
+                
+            }
+        }
         
         &-wrap {
             display: flex;
@@ -88,6 +100,7 @@
 .selected__container-table {
     margin: 40px;
     overflow-x: auto;
+    
 }
 
 table {
