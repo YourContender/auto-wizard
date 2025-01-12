@@ -1,9 +1,8 @@
 import React from 'react';
-import { listServices, advantageForSelectedService } from '../../data';
-import "./SelectedService.scss";
+import { listServices } from '../../data';
 import { Link } from 'react-router-dom';
 import { Advantage } from '../advantage/Advantage';
-import { Contact } from '../contact/Contact';
+import "./SelectedService.scss";
 
 export const SelectedService = ({ title }) => {
     const currentService = listServices.filter(item => item.title === title)

@@ -89,3 +89,42 @@
         }
     }
 }
+
+@media (max-width: 574px) {
+    .main {
+        &_container {
+            &-wrap {
+                max-width: 100%;
+                margin: 0;
+                &-block {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 476px) {
+    .main {
+        &_container {
+            &-wrap {
+                &-block {
+                    h1 {
+                        font-size: 24px;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                    &-btns {
+                        display: flex;
+                        flex-direction: column;
+                        button {
+                            margin-top: 20px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

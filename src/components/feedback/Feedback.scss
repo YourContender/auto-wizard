@@ -77,6 +77,9 @@
             }
             &-forms {
                 width: 550px;
+                &-phone {
+                    display: none;
+                }
                 &-wrap {
                     margin-top: 80px;
                     &-title {
@@ -165,6 +168,271 @@
                                     background-color: #2b2b2b;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .feedback {
+        &__container {
+            width: 950px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .feedback {
+        &__container {
+            width: 750px;
+            &-block {
+                &-advantage {
+                    &-title {
+                        h2 {
+                            font-size: 26px;
+                        }
+                    }
+                    &-descr {
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                    &-list {
+                        &-item {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                &-forms {
+                    &-wrap {
+                        &-title {
+                            h3 {
+                                font-size: 22px;
+                            }
+                        }
+                        &-descr {
+                            span {
+                                font-size: 16px;
+                            }
+                        }
+                        &-field {
+                            &-input, &-phone, &-problem {
+                                input, textarea {
+                                    height: 40px;
+                                    font-size: 16px;
+                                    &::placeholder {
+                                        font-size: 16px;
+                                    }
+                                }
+                                textarea {
+                                    height: 80px;
+                                }
+                            }
+                            &-submit {
+                                button {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback {
+        &__container {
+            width: 100%;
+            &-block {
+                flex-direction: column;
+                align-items: center;
+                &-advantage {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 0;
+                    width: 90%;
+                    &-title {
+                        h2 {
+                            font-size: 30px;
+                        }
+                    }
+                    &-descr {
+                        width: 90%;
+                        text-align: center;
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                    &-list {
+                        width: 90%;
+                        &-item {
+                            font-size: 18px;
+                        }
+                    }
+                    &-phone {
+                        display: none;
+                    }
+                }
+                &-forms {
+                    width: 90%;
+                    margin-top: 20px;
+                    padding-bottom: 30px;
+                    &-wrap {
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        &-title {
+                            text-align: center;
+                            h3 {
+                                font-size: 26px;
+                            }
+                        }
+                        &-descr {
+                            width: 100%;
+                            text-align: center;
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+                        &-field {
+                            &-input, &-phone, &-problem {
+                                input, textarea {
+                                    height: 50px;
+                                    font-size: 18px;
+                                    &::placeholder {
+                                        font-size: 18px;
+                                    }
+                                }
+                                textarea {
+                                    height: 100px;
+                                }
+                            }
+                            &-submit {
+                                button {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                    &-phone {
+                        display: block;
+                        margin-top: 40px;
+                        &-title {
+                            h3 {
+                                font-family: "Montserrat", serif;
+                                font-size: 20px;
+                            }
+                        }
+                        &-icon {
+                            font-size: 26px;
+                            margin-right: 20px;
+                        }
+                        a {
+                            font-size: 26px;
+                            font-family: "Montserrat", serif;
+                            font-weight: 700;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .feedback {
+        &__container {
+            &-block {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                &-advantage {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 0;
+                    width: 80%;
+                    &-title {
+                        h2 {
+                            font-size: 26px;
+                        }
+                    }
+                    &-descr {
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                    &-list {
+                        width: 90%;
+                        &-item {
+                            font-size: 16px;
+                        }
+                    }
+                    &-phone {
+                        display: none;
+                    }
+                }
+                &-forms {
+                    &-wrap {
+                        &-title {
+                            text-align: center;
+                            h3 {
+                                font-size: 22px;
+                            }
+                        }
+                        &-descr {
+                            width: 90%;
+                            text-align: center;
+                            span {
+                                font-size: 16px;
+                            }
+                        }
+                        &-field {
+                            &-input, &-phone, &-problem {
+                                input, textarea {
+                                    height: 40px;
+                                    font-size: 16px;
+                                    &::placeholder {
+                                        font-size: 16px;
+                                    }
+                                }
+                                textarea {
+                                    height: 80px;
+                                }
+                            }
+                            &-submit {
+                                button {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                    &-phone {
+                        display: block;
+                        margin-top: 40px;
+                        &-title {
+                            h3 {
+                                font-family: "Montserrat", serif;
+                                font-size: 20px;
+                            }
+                        }
+                        &-icon {
+                            font-size: 26px;
+                            margin-right: 20px;
+                        }
+                        a {
+                            font-size: 26px;
+                            font-family: "Montserrat", serif;
+                            font-weight: 700;
+                            cursor: pointer;
                         }
                     }
                 }

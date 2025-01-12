@@ -2,13 +2,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    &-mobile {
+        display: none;
+    }
     &__container {
         width: 1200px;
         margin: 50px 0;
         display: flex;
         justify-content: space-between;
         &-left {
-            width: 900px;
+            width: 770px;
             &-title {
                 h1 {
                     font-family: "Montserrat", serif;
@@ -39,7 +42,7 @@
             &-block {
                 display: flex;
                 img {
-                    width: 195px;
+                    width: 270px;
                 }
                 &-descr {
                     margin-left: 15px;
@@ -71,7 +74,7 @@
         }
         &-right {
             margin-left: 60px;
-            width: 500px;
+            width: 350px;
             margin-top: 50px;
             // display: none;
             &-title {
@@ -83,6 +86,8 @@
                 }
             }
             &-text {
+                display: flex;
+                justify-content: center;
                 span {
                     font-family: "Montserrat", serif;
                     color: #2b2b2b;
@@ -92,6 +97,139 @@
                 width: 100%;
             }
 
+        }
+    }
+}
+
+@media (max-width: 1200px)  {
+    .preview {
+        &__container {
+            width: 950px;
+            display: flex;
+            justify-content: space-between;
+            &-left {
+                width: 100%;
+                &-title {
+                    h1 {
+                        font-size: 26px;
+                    }
+                }
+                &-text {
+                    span {
+                        font-size: 16px;
+                    }
+                }
+                &-block {
+                    img {
+                        width: 270px;
+                        height: 450px;
+                        margin-top: 15px;
+                    }
+                    &-descr {
+                        h2 {
+                            font-size: 22px;
+                        }
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            &-right {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px)  {
+    .preview {
+        &-desktop {
+            display: none;
+        }
+        &-mobile {
+            display: block;
+        }
+        &__container {
+            width: 750px;
+            flex-direction: column;
+            &-left {
+                width: 100%;
+                &-block {
+                    flex-direction: column;
+                    img {
+                        width: auto;
+                        height: auto;
+                        margin-top: 5px;
+                    }
+                    &-descr {
+                        margin-top: 10px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 768px)  {
+    .preview {
+        &__container {
+            width: 560px;
+            flex-direction: column;
+            
+        }
+    }
+}
+
+@media (max-width: 576px)  {
+    .preview {
+        &__container {
+            width: 460px;
+            flex-direction: column;
+            &-left {
+                &-block {
+                    flex-direction: column;
+                    img {
+                        width: 100%;
+                    }
+                    &-descr {
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 476px)  {
+    .preview {
+        &__container {
+            width: 100%;
+            padding: 0 15px;
+            &-left {
+                &-title {
+                    h1 {
+                        font-size: 20px;
+                    }
+                }
+                &-text {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+                &-block {
+                    &-descr {
+                        h2 {
+                            font-size: 20px;
+                        }
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

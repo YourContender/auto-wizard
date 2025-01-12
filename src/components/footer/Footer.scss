@@ -40,3 +40,55 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .footer {
+        &__container {
+            justify-content: space-around;
+            &-info, &-services, &-contact {
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            &-info, &-services, &-contact {
+                width: 50%;
+                span {
+                    font-size: 18px;
+                }
+                h4 {
+                    text-align: center;
+                }
+            }
+            &-contact-list-item {
+                span {
+                    font-size: 18px;
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        &__container {
+            &-info, &-services, &-contact {
+                width: 70%;
+                span {
+                    font-size: 18px;
+                }
+            }
+            &-contact-list-item {
+                span {
+                    font-size: 18px;
+                } 
+            }
+        }
+    }
+}

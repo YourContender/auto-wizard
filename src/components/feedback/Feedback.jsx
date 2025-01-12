@@ -116,6 +116,17 @@ export const Feedback = () => {
                                     <button>Відправити</button>
                                 </div>
                             </div>
+
+                            <div className="feedback__container-block-forms-phone">
+                                <div className="feedback__container-block-forms-phone-title">
+                                    <h3>Чекаємо вашого дзвінка</h3>
+                                </div>
+                                <FontAwesomeIcon 
+                                    className="feedback__container-block-forms-phone-icon" 
+                                    icon={faPhoneVolume} 
+                                />
+                                <a type='tel'>(097) 058-29-18</a>
+                            </div>
                         </div>
                     </div>
                 </div>
