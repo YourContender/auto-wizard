@@ -67,3 +67,39 @@
         margin-bottom: 50px;
     }
 }
+
+@media (max-width: 1200px) {
+    .about {
+        &__content {
+            flex-direction: column;
+            width: 90%;
+            &-image {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+        &__bg {
+            &-title {
+                padding-left: 15px;
+            }
+        }
+        &__advantage {
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        &__content {
+            &-descr {
+                text-align: center;
+            }
+            &-image {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
