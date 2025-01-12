@@ -68,3 +68,33 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .contact {
+        &__bg {
+            &-title {
+                padding-left: 20px;
+            }
+        }
+        &__container {
+            &-content {
+                margin-top: 0;
+                flex-direction: column;
+                margin-bottom: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        &__container {
+            &-content {
+                &-item {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

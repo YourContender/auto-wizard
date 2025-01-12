@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./GoogleMap.scss";
 
 export const GoogleMap = ({ width, height }) => {
     return (
@@ -11,6 +12,7 @@ export const GoogleMap = ({ width, height }) => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                className="maps"
             ></iframe>
         </div>
     )

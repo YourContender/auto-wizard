@@ -30,6 +30,7 @@
                 display: flex;
                 align-items: center;
                 cursor: pointer;
+                font-size: 14px;
                 p {
                     margin-left: 5px;
                     font-weight: 700;
@@ -40,7 +41,7 @@
         }
     }
     &__container {
-        width: 1200px;
+        width: 1150px;
         &-title {
             color: #2b2b2b;
             h2 {
@@ -136,5 +137,92 @@ th {
 
     .selected__container-table {
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .selected__bg {
+            &-title {
+                padding-left: 20px;
+            }
+        }
+    .selected__container {
+        width: 950px;
+    }
+}
+
+@media (max-width: 992px) {
+    .selected__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-table {
+            width: 90%;
+        }
+        &-title {
+            width: 90%;
+            text-align: center;
+        }
+        &-wrap {
+            flex-direction: column-reverse;
+            width: 60%;
+            align-items: center;
+            &-descr {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 764px) {
+    .selected__container {
+        &-wrap {
+            width: 80%;
+            &-descr {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .selected__bg-title {
+        h1 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .selected__container {
+        &-wrap {
+            width: 90%;
+            &-img {
+                img {
+                    width: 100%;
+                }
+            }
+            &-descr {
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+        &-title {
+            width: 95%;
+            span {
+                font-size: 16px;
+            }
+        }
     }
 }

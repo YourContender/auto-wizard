@@ -41,6 +41,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
         &-list {
             width: 1200px;
             margin: 20px 0;
@@ -129,4 +130,102 @@
             }
         }
     }
+}
+
+@media (max-width: 1200px)  {
+    .list-services {
+        &__bg {
+            &-title {
+                padding-left: 20px;
+            }
+        }
+        &__container {
+            display: block;
+            margin: 0 auto;
+            &-list {
+                width: 950px;
+                justify-content: space-around;
+            }
+            &-contact {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+                &-title {
+                    text-align: center;
+                }
+                &-wrap {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 80%;
+                    span {
+                        margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px)  {
+    .list-services {
+        &__container {
+            &-list {
+                width: 100%;
+            }
+            &-contact {
+                &-wrap {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px)  {
+    .list-services {
+        &__bg {
+            &-title {
+                h1 {
+                    font-size: 22px
+                }
+            }
+        }
+        &__container {
+            &-list {
+                width: 100%;
+                &-item {
+                    width: 310px;
+                    .list-services-img {
+                        img {
+                            width: 310px;
+                        }
+                    }
+                    .list-services-subtitle {
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            &-contact {
+                &-wrap {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 468px)  {
+    .list-services {
+        &__container {
+            &-contact {
+                &-wrap {
+                    display: block;
+                }
+            }
+        }    
+    }
+    
 }
