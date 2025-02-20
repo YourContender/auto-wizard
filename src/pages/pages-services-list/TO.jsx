@@ -1,15 +1,15 @@
 import React from 'react'
 import { Header } from '../../components/header/Header'
 import { Footer } from '../../components/footer/Footer'
+import { Navigation } from '../../components/navigation/Navigation'
 import { SelectedService } from '../../components/selected-service/SelectedService'
-import { Navigation } from '../../components/navigation/Navigation';
 
-export const PendantPage = () => {
+export const TO = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Ремонт ходової (підвіски)" position="Ремонт" secondPosition="Ремонт ходової"/>
-            <SelectedService title="Підвіска"/>
+            <Navigation title="Технічне обслуговування" position="TO"/>
+            <SelectedService title="ТО"/>        
             <Footer/>
         </div>
     )

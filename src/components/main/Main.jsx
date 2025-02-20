@@ -6,8 +6,9 @@ export const Main = () => {
             <div className="main_container">
                 <div className="main_container-wrap">
                     <div className="main_container-wrap-block">
-                        <h1>Професійне технічне обслуговування автомобілів</h1>
-                        <span>Ми обслуговуємо всі марки авто, гарантуючи якість та увагу до кожної деталі.</span>
+                        <h1>СТО "AutoWizard" м. Дніпро, пров. Самаркандський, 2</h1>
+                        {/* <h1>Професійне технічне обслуговування автомобілів</h1> */}
+                        <span>Ремонт будь-якої складності – це не проблема, а завдання, яке ми вирішимо швидко та професійно!</span>
                         <div className="main_container-wrap-block-btns">
                             <button className="main_container-wrap-block-btns-services">Послуги</button>
                             <button className="main_container-wrap-block-btns-contacts">Контакти</button>

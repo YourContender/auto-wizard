@@ -1,15 +1,15 @@
 import React from 'react';
-import { listServices } from '../../data';
+import { configService } from '../../data';
 import { Link } from 'react-router-dom';
 import { Advantage } from '../advantage/Advantage';
 import "./SelectedService.scss";
 
 export const SelectedService = ({ title }) => {
-    const currentService = listServices.filter(item => item.title === title)
+    const currentService = configService.filter(item => item.title === title)
 
     return (
         <div className="selected">
-            <div className="selected__bg">
+            {/* <div className="selected__bg">
                 <div className="selected__bg-title">
                     <h1>{currentService[0].service}</h1>
                     <Link 
@@ -19,7 +19,7 @@ export const SelectedService = ({ title }) => {
                         Головна / <Link className="selected__bg-title-link" to="/service"> Послуги </Link> / <p>{title}</p>
                     </Link>
                 </div>
-            </div>
+            </div> */}
             <div className="selected__container">
                 {
                     currentService.map((item, index) => {

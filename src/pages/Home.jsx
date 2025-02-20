@@ -9,13 +9,15 @@ import { items, carModels } from '../data'
 import { GoogleMap } from '../components/google-map/GoogleMap'
 import { CarModels } from '../components/car-models/CarModels'
 import { Footer } from '../components/footer/Footer'
+import { ServicePoints } from '../components/service-points/ServicePoints'
 
 export const Home = () => {
     return (
         <>
             <Header/> 
             <Main/>
-            <Shares/>
+            <ServicePoints/>
+            {/* <Shares/> */}
             <Preview/>
             <Carousel items={items} />
             <Feedback/>

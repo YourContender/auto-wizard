@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../../images/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import { faPhoneVolume, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 
@@ -29,9 +29,23 @@ export const Header = () => {
                     <Link to="/about" className="header__nav-link">
                         Про нас
                     </Link>
-                    <Link to="/service" className="header__nav-link">
-                        Послуги
-                    </Link>
+                    <a to="/service" className="header__nav-link">
+                        Послуги <FontAwesomeIcon className="arrow-icon" icon={faCaretDown} />
+                        <ul className="header__nav-link-ul">
+                            <li className="link-item">
+                                <Link to="/repair">Ремонт</Link>
+                            </li>
+                            <li className="link-item">
+                                <Link to="/tehobsluzhivanie">ТО</Link> 
+                            </li>
+                            <li className="link-item">
+                                <Link to="/diagnostica">Діагностика</Link>
+                            </li>
+                            <li className="link-item">
+                                <Link to="/sale">Акції</Link>
+                            </li>
+                        </ul>
+                    </a>
                     <Link to="/price" className="header__nav-link">
                         Ціни
                     </Link>

@@ -9,12 +9,12 @@ import { GoogleMap } from '../google-map/GoogleMap';
 export const Contact = () => {
     return (
         <div className="contact">
-            <div className="contact__bg">
+            {/* <div className="contact__bg">
                 <div className="contact__bg-title">
                     <h1>Контакти</h1>
                     <Link className="contact__bg-title-link" to="/">Головна / <p>Контакти</p></Link>
                 </div>
-            </div>
+            </div> */}
             <div className="contact__container">
                 <div className="contact__container-content">
                     <div>

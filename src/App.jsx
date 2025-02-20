@@ -16,6 +16,15 @@ import { FuelSystem } from './pages/pages-services/FuelSystem.jsx';
 import { ClutchPage } from './pages/pages-services/ClutchPage.jsx';
 import { SteeringPage } from './pages/pages-services/SteeringPage.jsx';
 import { PendantPage } from './pages/pages-services/PendantPage.jsx';
+import { Repair } from './pages/pages-services-list/Repair.jsx';
+import { TO } from './pages/pages-services-list/To.jsx';
+import { Diagnostic } from './pages/pages-services-list/Diagnostic.jsx';
+import { Sale } from './pages/pages-services-list/Sale.jsx';
+import { ExhaustSystem } from './pages/pages-services/ExhaustSystem.jsx';
+import { CompucterDiagnostic } from './pages/pages-diagnostics/CompucterDiagnostic.jsx';
+import { ChassisDiagnostic } from './pages/pages-diagnostics/ChassisDiagnostic.jsx';
+import { TransmissionDiagnostic } from './pages/pages-diagnostics/TransmissionDiagnostic.jsx';
+import { BeforePurchaseDiagnostic } from './pages/pages-diagnostics/BeforePurchaseDiagnostic.jsx';
 
 export function App() {   
     const [currentServiceFromList, setCurrentServiceFormList] = useState([]);
@@ -29,16 +38,26 @@ export function App() {
                 <Route path="/contact" element={<ContactPage />} /> 
                 <Route path="/price" element={<Prices />} /> 
                 <Route path="/service" element={<Services setCurrService={setCurrentServiceFormList}/>} /> 
+                <Route path="/repair" element={<Repair/>}/>
+                <Route path="/tehobsluzhivanie" element={<TO/>}/>
+                <Route path="/diagnostica" element={<Diagnostic/>}/>
+                <Route path="/sale" element={<Sale/>}/>
 
-                <Route path="/service/halmivna-sistema" element={<BrakeSystem />} /> 
-                <Route path="/service/technichne-obslugovuvannya" element={<Maintenance />} /> 
-                <Route path="/service/kpp" element={<RepairKPP />} /> 
-                <Route path="/service/sistema-oholodzhennya" element={<CoolingSystem />} /> 
-                <Route path="/service/dvigun" element={<RepairMotor />} /> 
-                <Route path="/service/palivna-sistema" element={<FuelSystem />} /> 
-                <Route path="/service/sczeplennya" element={<ClutchPage />} /> 
-                <Route path="/service/ruleve-keruvannya" element={<SteeringPage />} /> 
-                <Route path="/service/pidviska" element={<PendantPage />} /> 
+                <Route path="/repair/halmivna-sistema" element={<BrakeSystem />} /> 
+                {/* <Route path="/technichne-obslugovuvannya" element={<Maintenance />} />  */}
+                <Route path="/repair/kpp" element={<RepairKPP />} /> 
+                <Route path="/repair/sistema-oholodzhennya" element={<CoolingSystem />} /> 
+                <Route path="/repair/dvigun" element={<RepairMotor />} /> 
+                <Route path="/repair/palivna-sistema" element={<FuelSystem />} /> 
+                <Route path="/repair/sczeplennya" element={<ClutchPage />} /> 
+                <Route path="/repair/ruleve-keruvannya" element={<SteeringPage />} /> 
+                <Route path="/repair/pidviska" element={<PendantPage />} /> 
+                <Route path="/repair/remont-vyhlopnoj-sistemy" element={<ExhaustSystem />} /> 
+                <Route path="/diagnostica/computerna-diagnostica" element={<CompucterDiagnostic />} /> 
+                <Route path="/diagnostica/diagnostica-hodovoi" element={<ChassisDiagnostic />} /> 
+                <Route path="/diagnostica/diagnostica-kpp" element={<TransmissionDiagnostic />} /> 
+                <Route path="/diagnostica/diagnostica-pered-pokupkoi" element={<BeforePurchaseDiagnostic />} /> 
+                
             </Routes>
         </Router>
     )
