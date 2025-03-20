@@ -8,7 +8,7 @@ export const ChassisDiagnostic = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Діагностика ходової" position="Діагностика" secondPosition="Діагностика ходової"/>
+            <Navigation title="Діагностика ходової" position="Діагностика" secondPosition="Діагностика ходової" path="/diagnostica"/>
             <SelectedService title="Діагностика ходової"/>
             <Footer/>
         </div>

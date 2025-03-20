@@ -8,7 +8,7 @@ export const BrakeSystem = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Гальмівна система" position="Ремонт" secondPosition="Гальмівна система"/>
+            <Navigation title="Гальмівна система" position="Ремонт" secondPosition="Гальмівна система" path="/repair"/>
             <SelectedService title="Гальмівна система"/>
             <Footer/>
         </div>

@@ -8,7 +8,7 @@ export const FuelSystem = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Ремонт паливної системи" position="Ремонт" secondPosition="Ремонт паливної системи"/>
+            <Navigation title="Ремонт паливної системи" position="Ремонт" secondPosition="Ремонт паливної системи" path="/repair"/>
             <SelectedService title="Паливна система"/>
             <Footer/>
         </div>

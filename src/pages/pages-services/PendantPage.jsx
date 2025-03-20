@@ -8,7 +8,7 @@ export const PendantPage = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Ремонт ходової (підвіски)" position="Ремонт" secondPosition="Ремонт ходової"/>
+            <Navigation title="Ремонт ходової (підвіски)" position="Ремонт" secondPosition="Ремонт ходової" path="/repair"/>
             <SelectedService title="Підвіска"/>
             <Footer/>
         </div>

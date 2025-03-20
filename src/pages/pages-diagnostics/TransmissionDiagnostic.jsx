@@ -8,7 +8,7 @@ export const TransmissionDiagnostic = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Діагностика коробки передач" position="Діагностика" secondPosition="Діагностика КПП"/>
+            <Navigation title="Діагностика коробки передач" position="Діагностика" secondPosition="Діагностика КПП" path="/diagnostica"/>
             <SelectedService title="Діагностика коробки передач"/>
             <Footer/>
         </div>

@@ -8,7 +8,7 @@ export const ClutchPage = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Ремонт та заміна зчеплення" position="Ремонт" secondPosition="Ремонт та заміна зчеплення"/>
+            <Navigation title="Ремонт та заміна зчеплення" position="Ремонт" secondPosition="Ремонт та заміна зчеплення" path="/repair"/>
             <SelectedService title="Зчеплення"/>
             <Footer/>
         </div>

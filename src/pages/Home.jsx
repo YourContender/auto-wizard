@@ -10,6 +10,7 @@ import { GoogleMap } from '../components/google-map/GoogleMap'
 import { CarModels } from '../components/car-models/CarModels'
 import { Footer } from '../components/footer/Footer'
 import { ServicePoints } from '../components/service-points/ServicePoints'
+import { Advantage } from '../components/advantage/Advantage'
 
 export const Home = () => {
     return (
@@ -17,8 +18,8 @@ export const Home = () => {
             <Header/> 
             <Main/>
             <ServicePoints/>
-            {/* <Shares/> */}
             <Preview/>
+            <Advantage/>
             <Carousel items={items} />
             <Feedback/>
             <CarModels items={carModels}/>

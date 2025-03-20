@@ -105,12 +105,14 @@
         }
         &-contact {
             width: 1200px;
+            margin: 0 auto;
             margin-bottom: 40px;
             &-title {
                 color: #2b2b2b;
-                font-family: "Montserrat", serif;
                 h2 {
-                    font-size: 32px;
+                    font-family: "Montserrat", serif;
+                    font-size: 30px;
+                    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
                 }
             }
             &-wrap {

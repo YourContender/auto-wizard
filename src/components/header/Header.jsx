@@ -15,13 +15,11 @@ export const Header = () => {
     return (
         <header className="header">
             <div className="header__wrap">
-                {/* Логотип */}
                 <div className="header__logo">
                     <img src={logo} alt="logo" />
                     <span>AutoWizard</span>
                 </div>
 
-                {/* Меню для десктопа */}
                 <nav className="header__nav">
                     <Link to="/" className="header__nav-link">
                         Головна
@@ -29,23 +27,23 @@ export const Header = () => {
                     <Link to="/about" className="header__nav-link">
                         Про нас
                     </Link>
-                    <a to="/service" className="header__nav-link">
+                    <span className="header__nav-link">
                         Послуги <FontAwesomeIcon className="arrow-icon" icon={faCaretDown} />
                         <ul className="header__nav-link-ul">
-                            <li className="link-item">
-                                <Link to="/repair">Ремонт</Link>
-                            </li>
-                            <li className="link-item">
-                                <Link to="/tehobsluzhivanie">ТО</Link> 
-                            </li>
-                            <li className="link-item">
-                                <Link to="/diagnostica">Діагностика</Link>
-                            </li>
-                            <li className="link-item">
-                                <Link to="/sale">Акції</Link>
-                            </li>
+                            <Link to="/repair" className="link-item">
+                               Ремонт
+                            </Link>
+                            <Link to="/tehobsluzhivanie" className="link-item">
+                                ТО
+                            </Link>
+                            <Link to="/diagnostica" className="link-item">
+                                Діагностика
+                            </Link>
+                            <Link to="/sale" className="link-item">
+                                Акції
+                            </Link>
                         </ul>
-                    </a>
+                    </span>
                     <Link to="/price" className="header__nav-link">
                         Ціни
                     </Link>
@@ -86,7 +84,16 @@ export const Header = () => {
                         Про нас
                     </Link>
                     <Link to="/service" className="header__side-menu-link" onClick={toggleMenu}>
-                        Послуги
+                        Ремонт
+                    </Link>
+                    <Link to="/service" className="header__side-menu-link" onClick={toggleMenu}>
+                        ТО
+                    </Link>
+                    <Link to="/service" className="header__side-menu-link" onClick={toggleMenu}>
+                        Діагностика
+                    </Link>
+                    <Link to="/service" className="header__side-menu-link" onClick={toggleMenu}>
+                        Акції
                     </Link>
                     <Link to="/price" className="header__side-menu-link" onClick={toggleMenu}>
                         Ціни

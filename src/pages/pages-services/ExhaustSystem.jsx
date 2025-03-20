@@ -8,7 +8,7 @@ export const ExhaustSystem = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Ремонт вихлопної системи" position="Ремонт" secondPosition="Ремонт вихлопної системи"/>
+            <Navigation title="Ремонт вихлопної системи" position="Ремонт" secondPosition="Ремонт вихлопної системи" path="/repair"/>
             <SelectedService title="Ремонт вихлопної системи"/>
             <Footer/>
         </div>

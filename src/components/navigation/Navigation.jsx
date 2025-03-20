@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Navigation.scss";
 
-export const Navigation = ({ title, position, secondPosition }) => {
+export const Navigation = ({ title, position, secondPosition, path }) => {
     return (
         <div className="navigation">
             <div className="navigation_container">
@@ -12,13 +12,13 @@ export const Navigation = ({ title, position, secondPosition }) => {
                 {
                     secondPosition ? 
                         <div className="navigation-items">
-                            <Link className="navigation-item">Головна / </Link>
-                            <Link className="navigation-item">{position} / </Link>
+                            <Link to="/" className="navigation-item">Головна / </Link>
+                            <Link to={path} className="navigation-item">{position} / </Link>
                             <Link className="navigation-item child"> {secondPosition}</Link>
                         </div>
                         :
                         <div className="navigation-items">
-                            <Link className="navigation-item">Головна / </Link>
+                            <Link to="/" className="navigation-item">Головна / </Link>
                             <Link className="navigation-item child">{position}</Link>
                         </div>
                 }

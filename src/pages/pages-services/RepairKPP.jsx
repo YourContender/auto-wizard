@@ -8,7 +8,7 @@ export const RepairKPP = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Ремонт КПП" position="Ремонт" secondPosition="Ремонт КПП"/>
+            <Navigation title="Ремонт КПП" position="Ремонт" secondPosition="Ремонт КПП" path="/repair"/>
             <SelectedService title="КПП"/>
             <Footer/>
         </div>

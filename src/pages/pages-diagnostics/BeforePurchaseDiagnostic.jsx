@@ -8,7 +8,7 @@ export const BeforePurchaseDiagnostic = () => {
     return (
         <div>
             <Header/>
-            <Navigation title="Діагностика авто перед покупкою" position="Діагностика" secondPosition="Діагностика перед покупкою"/>
+            <Navigation title="Діагностика авто перед покупкою" position="Діагностика" secondPosition="Діагностика перед покупкою" path="/diagnostica"/>
             <SelectedService title="Діагностика авто перед покупкою"/>
             <Footer/>
         </div>
