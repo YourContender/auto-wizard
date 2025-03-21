@@ -4,7 +4,7 @@ import { Footer } from '../../components/footer/Footer'
 import { Navigation } from '../../components/navigation/Navigation'
 import { SelectedService } from '../../components/selected-service/SelectedService'
 
-export const TO = () => {
+export const Tech = () => {
     return (
         <div>
             <Header/>

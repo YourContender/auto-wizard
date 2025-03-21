@@ -17,7 +17,7 @@ import { ClutchPage } from './pages/pages-services/ClutchPage.jsx';
 import { SteeringPage } from './pages/pages-services/SteeringPage.jsx';
 import { PendantPage } from './pages/pages-services/PendantPage.jsx';
 import { Repair } from './pages/pages-services-list/Repair.jsx';
-import { TO } from './pages/pages-services-list/To.jsx';
+import { Tech } from './pages/pages-services-list/Tech.jsx';
 import { Diagnostic } from './pages/pages-services-list/Diagnostic.jsx';
 import { Sale } from './pages/pages-services-list/Sale.jsx';
 import { ExhaustSystem } from './pages/pages-services/ExhaustSystem.jsx';
@@ -39,7 +39,7 @@ export function App() {
                 <Route path="/price" element={<Prices />} /> 
                 <Route path="/service" element={<Services setCurrService={setCurrentServiceFormList}/>} /> 
                 <Route path="/repair" element={<Repair/>}/>
-                <Route path="/tehobsluzhivanie" element={<TO/>}/>
+                <Route path="/tehobsluzhivanie" element={<Tech/>}/>
                 <Route path="/diagnostica" element={<Diagnostic/>}/>
                 <Route path="/sale" element={<Sale/>}/>
 
