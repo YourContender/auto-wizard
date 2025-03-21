@@ -42,20 +42,20 @@ const Carousel = ({ items }) => {
                     <SwiperSlide key={index}>
                         <div className="carousel-item">
                             <img src={Object.values(item.image)} alt={item.title} className="carousel-image" />
-                            <div className="carousel-title">
+                            <Link to={item.path} className="carousel-title">
                                 <h1>{item.title}</h1>
                                 <FontAwesomeIcon 
                                     className="carousel-title-arrow" 
                                     icon={faArrowRight} 
                                 />
-                            </div>
+                            </Link>
                             <div className="carousel-shadow-block"></div>
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
             <div className="carousel-btn">
-                <Link className="carousel-btn-road" to="/service">Перейти до всіх послуг</Link>
+                <Link className="carousel-btn-road" to="/repair">Перейти до послуг ремонту</Link>
             </div>
         </div>
     );

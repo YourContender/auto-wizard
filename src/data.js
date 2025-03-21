@@ -40,14 +40,6 @@ import comp from "./images/list-services/diagnostika.jpg";
 import diagnoctickpp from "./images/list-services/diagnostika-korobki-peredach.jpg";
 import exhaust from "./images/list-services/exhaust.jpg";
 
-// for selected service component SVG images
-import checkList from "./images/svg/selected-service/check-list-svgrepo-com (1).svg";
-import workSpace from "./images/svg/selected-service/private-garage-svgrepo-com.svg";
-import time from "./images/svg/selected-service/time-check-svgrepo-com.svg";
-import worker from "./images/svg/selected-service/mechanic-tools-svgrepo-com.svg";
-import service from "./images/svg/selected-service/repairing-service-svgrepo-com.svg";
-import price from "./images/svg/selected-service/pc-mechanic-svgrepo-com.svg";
-
 // advantage images
 import a1 from "./images/advantage/1.png";
 import a2 from "./images/advantage/2.png";
@@ -59,35 +51,41 @@ import a6 from "./images/advantage/6.png";
 export const items = [
 	{
 		image: { service5 },
+		path: "/repair/halmivna-sistema",
 		title: "Гальмівна система",
 		description:
 			"Ваша безпека на дорозі - це наш головний пріорітет, тому ми завжди радимо ретельно перевіряти гальмівну систему авто. ",
 	},
 	{
 		image: { service4 },
+		path: "/tehobsluzhivanie",
 		title: "ТО",
 		description: "Важливою частиною експлуатації автомобіля є своєчасне ТО. ",
 	},
 	{
 		image: { service3 },
+		path: "/repair/kpp",
 		title: "КПП",
 		description:
 			"Кваліфікація наших майстрів є основною вимогою складного і точного процесу ремонту КПП. ",
 	},
 	{
 		image: { service8 },
+		path: "/repair/sistema-oholodzhennya",
 		title: "Системи охолодження",
 		description:
 			"Підтримка оптимальної температури в двигуні, для упередження його перегріву є надважливою складовою життєздатності двигуна.",
 	},
 	{
 		image: { service2 },
+		path: "/repair/dvigun",
 		title: "Двигун",
 		description:
 			"Двигун - це серце автомобіля, від роботи якого залежить абсолютно все",
 	},
 	{
 		image: { service6 },
+		path: "/repair/palivna-sistema",
 		title: "Паливна система",
 		description:
 			"Паливна система - забезпечує правильну роботу двигуна та оптимальне використання палива, тому здоров'я паливної напряму пов'язане зі здоров'ям двигуна. ",

@@ -56,6 +56,17 @@
                         background-color: #d33535;
                         color: #eee8e8;
                         transition: all .3s ease-in-out;
+                        font-family: "Montserrat", serif;
+                        text-transform: uppercase;
+                        padding: 10px 25px;
+                        font-size: 20px;    
+                        margin: 0 10px;
+                        letter-spacing: 1px;
+                        font-weight: 700;
+                        border-radius: 7px;
+                        border: none;
+                        text-decoration: none;
+                        cursor: pointer;
                         &:hover {
                             background-color: #eee8e8;
                             color: #2b2b2b;
@@ -66,13 +77,6 @@
                         transition: all .3s ease-in-out;
                         background-color: #eee8e8;
                         color: #2b2b2b;
-                        &:hover {
-                            background-color: #d33535;
-                            color: #eee8e8;
-                        }
-                    }
-                    
-                    button {
                         font-family: "Montserrat", serif;
                         text-transform: uppercase;
                         padding: 10px 25px;
@@ -81,9 +85,15 @@
                         letter-spacing: 1px;
                         font-weight: 700;
                         border-radius: 7px;
+                        text-decoration: none;
                         border: none;
                         cursor: pointer;
+                        &:hover {
+                            background-color: #d33535;
+                            color: #eee8e8;
+                        }
                     }
+                    
                 }
             }
         }

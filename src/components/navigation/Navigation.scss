@@ -3,6 +3,13 @@
     background-color: #2b2b2b;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.658)), url(./9.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     &_container {
         width: 1200px;
         padding: 15px 0;

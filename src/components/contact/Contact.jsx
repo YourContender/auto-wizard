@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faClock, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faTelegram, faViber } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
 import "./Contact.scss";
@@ -44,6 +45,20 @@ export const Contact = () => {
                                 <FontAwesomeIcon 
                                     className="contact-icon" 
                                     icon={faPhone} 
+                                />
+                                (097) 058-29-18
+                            </span>
+                            <span className="contact__container-content-item-text">
+                                <FontAwesomeIcon 
+                                    className="contact-icon" 
+                                    icon={faTelegram} 
+                                />
+                                (097) 058-29-18
+                            </span>
+                            <span className="contact__container-content-item-text">
+                                <FontAwesomeIcon 
+                                    className="contact-icon" 
+                                    icon={faViber} 
                                 />
                                 (097) 058-29-18
                             </span>

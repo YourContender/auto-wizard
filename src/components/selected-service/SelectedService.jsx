@@ -5,7 +5,15 @@ import { Advantage } from '../advantage/Advantage';
 import "./SelectedService.scss";
 
 export const SelectedService = ({ title }) => {
-    const currentService = configService.filter(item => item.title === title)
+    const currentService = configService.filter(item => item.title === title);
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
     return (
         <div className="selected">
@@ -27,7 +35,7 @@ export const SelectedService = ({ title }) => {
                             <div className="selected__container-wrap" key={index}>
                                 <div className="selected__container-wrap-descr">
                                     <span>{item.description}</span>
-                                    <button>Вартість послуг</button>
+                                    <button onClick={() => scrollToSection("price")}>Вартість послуг</button>
                                 </div>
                                 <div className="selected__container-wrap-img">
                                     <img src={item.image} alt="" />
@@ -46,7 +54,7 @@ export const SelectedService = ({ title }) => {
                     </span>
                 </div>
 
-                <div className="selected__container-table">
+                <div className="selected__container-table" id="price">
                     <table>
                         <thead>
                             <tr>

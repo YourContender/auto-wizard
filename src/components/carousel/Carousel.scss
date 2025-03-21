@@ -40,6 +40,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    text-decoration: none;
     // max-width: 400px;
     
     &-container {
@@ -70,17 +71,20 @@
       background-color: #1f1d1da6;
       cursor: pointer;
       transition: background-color 0.3s ease, color 0.3s ease;
+      text-decoration: none;
       h1 {
         font-family: "Montserrat", serif;
         padding-left: 20px;
         font-size: 24px;
         color: #fff;
+        text-decoration: none;
         
       }
       &-arrow {
         padding-right: 20px;
         font-size: 26px;
         transition: transform 0.3s ease, color 0.3s ease;
+        color: #fff;
       }
       &:hover {
         background-color: #ff4d4d; 

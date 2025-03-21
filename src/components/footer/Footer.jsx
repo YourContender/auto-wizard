@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faClock, faPhone } from '@fortawesome/free-solid-svg-icons';
 import "./Footer.scss";
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
@@ -10,20 +11,20 @@ export const Footer = () => {
                 <div className="footer__container-info">
                     <h4>Інформація</h4>
                     <div className="footer__container-info-list">
-                        <span>Про нас</span>
-                        <span>Контакти</span>
-                        <span>Ціни</span>
-                        <span>Відгуки</span>
+                        <Link to="/about" className="footer__container-info-list-link">Про нас</Link>
+                        <Link to="/contact" className="footer__container-info-list-link">Контакти</Link>
+                        <Link to="/price" className="footer__container-info-list-link">Ціни</Link>
+                        <Link to="/" className="footer__container-info-list-link">Відгуки</Link>
                     </div>
                 </div>
 
                 <div className="footer__container-services">
                     <h4>Послуги</h4>
                     <div className="footer__container-services-list">
-                        <span>Ремонт</span>
-                        <span>Діагностика</span>
-                        <span>ТО</span>
-                        <span>Знижки</span>
+                        <Link to="/repair" className="footer__container-info-list-link">Ремонт</Link>
+                        <Link to="/diagnostica" className="footer__container-info-list-link">Діагностика</Link>
+                        <Link to="/tehobsluzhivanie" className="footer__container-info-list-link">ТО</Link>
+                        <Link to="/sale" className="footer__container-info-list-link">Знижки</Link>
                     </div>
                 </div>
 
