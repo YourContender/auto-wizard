@@ -81,6 +81,12 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .dropdown-table-price-descr {
+        padding: 0 10px;
+    }
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .dropdown-table {

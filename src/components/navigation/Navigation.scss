@@ -38,3 +38,49 @@
     font-weight: 700;
     text-decoration: underline;
 }
+
+@media (max-width: 1200px) {
+    .navigation {
+        &_container {
+            margin-left: 55px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        &-title {
+            h2 {
+                font-size: 30px;
+            }
+        }
+        &-item {
+            font-size: 19px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .navigation {
+        &_container {
+            margin-left: 25px;
+        }
+        &-title {
+            h2 {
+                font-size: 26px;
+            }
+        }
+        &-item {
+            font-size: 19px;
+        }
+    }
+}
+
+@media (max-width: 476px) {
+    .navigation {
+        padding: 5px 0;
+        &_container {
+            margin-left: 10px;
+        }
+    }
+}

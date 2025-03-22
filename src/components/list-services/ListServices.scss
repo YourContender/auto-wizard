@@ -179,9 +179,10 @@
                 width: 100%;
             }
             &-contact {
-                &-wrap {
-                    width: 80%;
-                }
+                width: 550px
+                // &-wrap {
+                //     width: 80%;
+                // }
             }
         }
     }
@@ -214,6 +215,7 @@
                 }
             }
             &-contact {
+                width: 100%;
                 &-wrap {
                     width: 100%;
                 }
@@ -227,7 +229,11 @@
         &__container {
             &-contact {
                 &-wrap {
+                    width: 90%;
                     display: block;
+                    span {
+                        font-size: 18px;
+                    }
                 }
             }
         }    

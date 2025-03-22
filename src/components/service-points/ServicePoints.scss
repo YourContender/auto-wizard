@@ -59,3 +59,82 @@
     }
 }
   
+
+@media (max-width: 1200px) {
+    .service {
+        &-container {
+            width: 100%;
+        }
+        &-card {
+            width: 450px;
+            height: auto;
+        }
+        &-title {
+            margin-left: 25px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .service {
+        &-card {
+            width: 340px;
+            height: auto;
+        }
+        &-title {
+            margin-left: 25px;
+        }
+    }
+    .service-subtitle {
+        height: 80px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        &-card {
+            width: 80%;
+            height: auto;
+        }
+        &-title {
+            margin-left: 0;
+            text-align: center;
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+    .service-subtitle {
+        height: 40px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .service {
+        &-card {
+            width: 90%;
+            height: auto;
+        }
+        &-title {
+            h2 {
+                font-size: 26px;
+            }
+        }
+    }
+    .service-subtitle {
+        height: 50px !important;
+    }
+}
+
+@media (max-width: 474px) {
+    .service-subtitle {
+        font-size: 19px !important;
+    }
+    .service {
+        &-title {
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+}

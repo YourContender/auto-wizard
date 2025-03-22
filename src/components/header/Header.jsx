@@ -83,16 +83,16 @@ export const Header = () => {
                     <Link to="/about" className="header__side-menu-link" onClick={toggleMenu}>
                         Про нас
                     </Link>
-                    <Link to="/service" className="header__side-menu-link" onClick={toggleMenu}>
+                    <Link to="/repair" className="header__side-menu-link" onClick={toggleMenu}>
                         Ремонт
                     </Link>
-                    <Link to="/service" className="header__side-menu-link" onClick={toggleMenu}>
+                    <Link to="/tehobsluzhivanie" className="header__side-menu-link" onClick={toggleMenu}>
                         ТО
                     </Link>
-                    <Link to="/service" className="header__side-menu-link" onClick={toggleMenu}>
+                    <Link to="/diagnostica" className="header__side-menu-link" onClick={toggleMenu}>
                         Діагностика
                     </Link>
-                    <Link to="/service" className="header__side-menu-link" onClick={toggleMenu}>
+                    <Link to="/sale" className="header__side-menu-link" onClick={toggleMenu}>
                         Акції
                     </Link>
                     <Link to="/price" className="header__side-menu-link" onClick={toggleMenu}>

@@ -99,6 +99,28 @@
         }
     }
 }
+@media (max-width: 992px) {
+    .main {
+        &_container {
+            &-wrap {
+                &-block {
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .main {
+        &_container {
+            &-wrap {
+                &-block {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 574px) {
     .main {
@@ -109,6 +131,7 @@
                 &-block {
                     width: 100%;
                     text-align: center;
+                    margin-left: 0px;
                 }
             }
         }
@@ -121,16 +144,18 @@
             &-wrap {
                 &-block {
                     h1 {
-                        font-size: 24px;
+                        font-size: 22px;
+                        width: 310px;
                     }
                     span {
-                        font-size: 20px;
+                        font-size: 18px;
+                        width: 310px;
                     }
                     &-btns {
                         display: flex;
                         flex-direction: column;
-                        button {
-                            margin-top: 20px; 
+                        &-contacts {
+                            margin-top: 20px;
                         }
                     }
                 }

@@ -27,7 +27,7 @@ export const Shares = () => {
                         </div>
                     </div>
 
-                    <div className="shares__container-list-item">
+                    <div className="shares__container-list-item reverse">
                         <div className="shares__container-list-item-img">
                             <img src={hovodka} alt="" />
                         </div>
@@ -40,7 +40,6 @@ export const Shares = () => {
                                 Особливо важливим елементом безпеки, на наш погляд, є саме підвіска, тому ми готові безкоштовно 
                                 продіагностувати Вашу підвіску, щоб в будь-якій ситуації ви були впевнені, що Ваше авто не підведе.
                             </span>
-                            {/* <button className="shares__container-list-item-text-btn">Звернутися до нас</button> */}
                         </div>
                         
                     </div>
