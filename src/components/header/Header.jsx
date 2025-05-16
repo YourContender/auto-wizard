@@ -16,7 +16,7 @@ export const Header = () => {
         <header className="header">
             <div className="header__wrap">
                 <div className="header__logo">
-                    <img src={logo} alt="logo" />
+                    <img src={logo} alt="logo" style={{"width": "50px"}}/>
                     <span>AutoWizard</span>
                 </div>
 
@@ -28,7 +28,12 @@ export const Header = () => {
                         Про нас
                     </Link>
                     <span className="header__nav-link">
-                        Послуги <FontAwesomeIcon className="arrow-icon" icon={faCaretDown} />
+                        Послуги
+                        {/*<FontAwesomeIcon className="arrow-icon" icon={faCaretDown} />*/}
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style={{height: "1em", }}>
+                            <path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path>
+                        </svg>
                         <ul className="header__nav-link-ul">
                             <Link to="/repair" className="link-item">
                                Ремонт
@@ -73,7 +78,7 @@ export const Header = () => {
             <div className={`header__side-menu ${isMenuOpen ? "open" : ""}`}>
                 <nav className="header__side-menu-nav">
                     <div className="header__side-logo">
-                        <img src={logo} alt="logo" />
+                        <img src={logo} alt="logo" style={{"width": "50px"}}/>
                         <span>AutoWizard</span>
                     </div>
 

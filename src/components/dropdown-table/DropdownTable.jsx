@@ -6,10 +6,6 @@ import './DropdownTable.scss';
 
 export const DropdownTable = ({ data, title, descr }) => {
     const [openSection, setOpenSection] = useState(null);
-
-    console.log(data);
-    
-
     const toggleSection = (section) => {
         setOpenSection(openSection === section ? null : section);
     };

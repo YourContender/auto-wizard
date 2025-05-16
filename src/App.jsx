@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home.jsx';
 import { Prices } from './pages/Prices.jsx';
 import { Services } from './pages/Services.jsx';
@@ -30,8 +30,8 @@ export function App() {
     const [currentServiceFromList, setCurrentServiceFormList] = useState([]);
     
     return (
-        <Router>
-            <ScrollToTop/>
+        //<>
+            //<ScrollToTop /> {/* Додаємо ScrollToTop перед Routes */}
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} /> 
@@ -56,9 +56,8 @@ export function App() {
                 <Route path="/diagnostica/computerna-diagnostica" element={<CompucterDiagnostic />} /> 
                 <Route path="/diagnostica/diagnostica-hodovoi" element={<ChassisDiagnostic />} /> 
                 <Route path="/diagnostica/diagnostica-kpp" element={<TransmissionDiagnostic />} /> 
-                <Route path="/diagnostica/diagnostica-pered-pokupkoi" element={<BeforePurchaseDiagnostic />} /> 
-                
+                <Route path="/diagnostica/diagnostica-pered-pokupkoi" element={<BeforePurchaseDiagnostic />} />
             </Routes>
-        </Router>
+        //</>
     )
 }

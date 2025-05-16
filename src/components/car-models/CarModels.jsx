@@ -6,8 +6,6 @@ import "swiper/css/pagination";
 import "./CarModels.scss";
 
 export const CarModels = ({ items }) => {
-    console.log("items: ", items);
-    
     return (
         <div className="models-container">
             <Swiper
