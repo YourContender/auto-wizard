@@ -26,7 +26,7 @@ if (!isProduction) {
 } else {
     const compression = (await import('compression')).default
     const sirv = (await import('sirv')).default
-    //app.use(compression())
+    app.use(compression())
     app.use(sirv('./dist/client', { extensions: [] }))
 }
 
