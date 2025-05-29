@@ -60,9 +60,9 @@ export const Shares = () => {
                         </div>
                     </div>
                 </div>
-                <div className="shares__container-list-item-text-btn">
+                {/* <div className="shares__container-list-item-text-btn">
                     <button>Замовити зворотній виклик</button>
-                </div>
+                </div> */}
             </div>
         </div>
     )

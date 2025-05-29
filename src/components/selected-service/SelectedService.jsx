@@ -1,6 +1,5 @@
 import React from 'react';
 import { configService } from '../../data';
-import { Link } from 'react-router-dom';
 import { Advantage } from '../advantage/Advantage';
 import "./SelectedService.scss";
 

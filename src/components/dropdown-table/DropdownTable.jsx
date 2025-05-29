@@ -1,7 +1,5 @@
 // DropdownTable.js
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import './DropdownTable.scss';
 
 export const DropdownTable = ({ data, title, descr }) => {
@@ -29,10 +27,7 @@ export const DropdownTable = ({ data, title, descr }) => {
                         onClick={() => toggleSection(index)}
                     >
                         {section.service}
-                        <FontAwesomeIcon 
-                            className="footer-icon" 
-                            icon={faPlus} 
-                        /> 
+                        <span className="dropdown-icon">{openSection === index ? '−' : '+'}</span>
                     </button>
                     {openSection === index && (
                         <table className="dropdown-content">

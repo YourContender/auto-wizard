@@ -4,6 +4,7 @@ import { Footer } from '../components/footer/Footer';
 import { AboutUs } from '../components/about-us/AboutUs';
 import { Navigation } from '../components/navigation/Navigation';
 import { MiniContact } from '../components/contact/MiniContact';
+import { Contact } from '../components/contact/Contact';
 
 export const About = () => {
     return (
@@ -11,7 +12,7 @@ export const About = () => {
             <Header/>
             <Navigation title="Про нас" position="Про нас" path="/"/>
             <AboutUs/>
-            <MiniContact/>
+            <Contact/>
             <Footer/>
         </div>
     )

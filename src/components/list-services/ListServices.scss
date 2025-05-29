@@ -51,7 +51,7 @@
             gap: 40px;
             row-gap: 30px;
             &-item {
-                background-color: #2b2b2b;
+                background-color: #242323ee;
                 box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.884);
                 width: 350px;
                 border-radius: 10px;
@@ -73,6 +73,7 @@
                     h2 {
                         margin: 0;
                         font-size: 22px;
+                        color: #fff;
                     }
                 }
                 .list-services-btn {

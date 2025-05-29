@@ -81,6 +81,14 @@
     }
 }
 
+.dropdown-icon {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+
 @media (max-width: 1200px) {
     .dropdown-table-price-descr {
         padding: 0 10px;

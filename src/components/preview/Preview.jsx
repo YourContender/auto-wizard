@@ -4,9 +4,9 @@ import preview6 from "../../images/preview/preview6.webp";
 import preview2 from "../../images/preview/preview2.webp";
 import preview4 from "../../images/preview/preview4.webp";
 import preview5 from "../../images/preview/preview5.webp";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import "./Preview.scss";
+import { textForPreviewComponentPoints } from '../../data';
+import { PreviewPoints } from './preview-poitns/PreviewPoints';
 
 export const Preview = () => {
     return (
@@ -39,62 +39,13 @@ export const Preview = () => {
                                 доцільну пораду та консультацію безкоштовно, адже головне це - ваша безпека на дорозі!
                             </span>
                             <div className="preview__container-left-block-descr-points">
-                                <div className="preview__container-left-block-descr-points-item">
-                                    <FontAwesomeIcon 
-                                        className="preview__container-left-block-descr-points-item-check" 
-                                        icon={faCheck} 
-                                    />
-                                    <span>Велика кількість задоволених клієнтів</span>
-                                </div>
-                                <div className="preview__container-left-block-descr-points-item">
-                                    <FontAwesomeIcon 
-                                        className="preview__container-left-block-descr-points-item-check" 
-                                        icon={faCheck} 
-                                    />
-                                    <span>Безперечна репутація</span>
-                                </div>
-                                <div className="preview__container-left-block-descr-points-item">
-                                    <FontAwesomeIcon 
-                                        className="preview__container-left-block-descr-points-item-check" 
-                                        icon={faCheck} 
-                                    />
-                                    <span>Якісне виконання роботи</span>
-                                </div>
-                                <div className="preview__container-left-block-descr-points-item">
-                                    <FontAwesomeIcon 
-                                        className="preview__container-left-block-descr-points-item-check" 
-                                        icon={faCheck} 
-                                    />
-                                    <span>Кожен етап ремонту ретельно узгоджується з клієнтом</span>
-                                </div>
-                                <div className="preview__container-left-block-descr-points-item">
-                                    <FontAwesomeIcon 
-                                        className="preview__container-left-block-descr-points-item-check" 
-                                        icon={faCheck} 
-                                    />
-                                    <span>Багаторічний досвід роботи</span>
-                                </div>
-                                <div className="preview__container-left-block-descr-points-item">
-                                    <FontAwesomeIcon 
-                                        className="preview__container-left-block-descr-points-item-check" 
-                                        icon={faCheck} 
-                                    />
-                                    <span>Приємна та прозора цінова політика</span>
-                                </div>
-                                <div className="preview__container-left-block-descr-points-item">
-                                    <FontAwesomeIcon 
-                                        className="preview__container-left-block-descr-points-item-check" 
-                                        icon={faCheck} 
-                                    />
-                                    <span>Діють акційні пропозиції</span>
-                                </div>
-                                <div className="preview__container-left-block-descr-points-item">
-                                    <FontAwesomeIcon 
-                                        className="preview__container-left-block-descr-points-item-check" 
-                                        icon={faCheck} 
-                                    />
-                                    <span>Не нав'язуємо зайвих послуг</span>
-                                </div>
+                                {
+                                    textForPreviewComponentPoints.map((item, index) => {
+                                        return (
+                                            <PreviewPoints text={item} key={index}/>
+                                        )
+                                    })
+                                }
                             </div>
                         </div>
                     </div>
@@ -102,14 +53,14 @@ export const Preview = () => {
                 <div className="preview__container-right">
                     <img src={preview5} alt="" className="preview-desktop"/>
                     <img src={preview4} alt="" className="preview-mobile"/>
-                    <div className="preview__container-right-wrap">
+                    {/* <div className="preview__container-right-wrap">
                         <div className="preview__container-right-title">
                             <h2>Увага до кожної дрібниці</h2>
                         </div>
                         <div className="preview__container-right-text">
                             <span>Ми приділяємо увагу кожній дрібниці, щоб виявити потенційну проблему до того, як вона може нашкодити.</span>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

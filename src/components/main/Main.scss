@@ -25,11 +25,10 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
                 width: 400px;
                 height: 100%;
                 color: #f3eeee;
-
+                
                 h1 {
                     font-family: "Montserrat", serif;
                     font-size: 26px;
@@ -40,6 +39,7 @@
                     text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
                     // text-transform: uppercase;
                 }
+                
 
                 span {
                     font-family: "Montserrat", serif;
@@ -142,7 +142,11 @@
     .main {
         &_container {
             &-wrap {
+                width: 100%;
                 &-block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
                     h1 {
                         font-size: 22px;
                         width: 310px;
@@ -154,6 +158,7 @@
                     &-btns {
                         display: flex;
                         flex-direction: column;
+                        width: 70%;
                         &-contacts {
                             margin-top: 20px;
                         }
