@@ -1,9 +1,9 @@
 import React from 'react'
 import "./ServicePoints.scss";
-import point1 from "../../images/points/12.jpg"
-import point2 from "../../images/points/13.jpg"
-import point3 from "../../images/points/14.jpg"
-import point4 from "../../images/points/15.jpg"
+import point1 from "../../images/points/500px-1.webp"
+import point2 from "../../images/points/500px-2.webp"
+import point3 from "../../images/points/500px-3.webp"
+import point4 from "../../images/points/500px-4.webp"
 import { Link } from 'react-router-dom';
 
 const services = [

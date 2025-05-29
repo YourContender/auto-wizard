@@ -2,9 +2,6 @@ import React from 'react'
 import { advantageForSelectedService } from '../../data';
 import "./Advantage.scss";
 
-import a1 from "../../images/advantage/1.png";
-import a2 from "../../images/advantage/2.png";
-
 export const Advantage = () => {
     return (
         <div className="advantage">

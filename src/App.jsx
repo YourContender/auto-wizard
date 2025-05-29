@@ -30,8 +30,8 @@ export function App() {
     const [currentServiceFromList, setCurrentServiceFormList] = useState([]);
     
     return (
-        //<>
-            //<ScrollToTop /> {/* Додаємо ScrollToTop перед Routes */}
+        <>
+            <ScrollToTop /> {/* Додаємо ScrollToTop перед Routes */}
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} /> 
@@ -44,7 +44,6 @@ export function App() {
                 <Route path="/sale" element={<Sale/>}/>
 
                 <Route path="/repair/halmivna-sistema" element={<BrakeSystem />} /> 
-                {/* <Route path="/technichne-obslugovuvannya" element={<Maintenance />} />  */}
                 <Route path="/repair/kpp" element={<RepairKPP />} /> 
                 <Route path="/repair/sistema-oholodzhennya" element={<CoolingSystem />} /> 
                 <Route path="/repair/dvigun" element={<RepairMotor />} /> 
@@ -58,6 +57,6 @@ export function App() {
                 <Route path="/diagnostica/diagnostica-kpp" element={<TransmissionDiagnostic />} /> 
                 <Route path="/diagnostica/diagnostica-pered-pokupkoi" element={<BeforePurchaseDiagnostic />} />
             </Routes>
-        //</>
+        </>
     )
 }

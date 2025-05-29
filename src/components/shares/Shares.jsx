@@ -1,7 +1,7 @@
 import React from 'react';
-import diagnostika from "../../images/sale/diagnostika.png";
-import hovodka from "../../images/sale/hodovka.png";
-import volonter from "../../images/sale/volonter.png";
+import diagnostika from "../../images/sale/diagnostika.webp";
+import hovodka from "../../images/sale/hodovka.webp";
+import volonter from "../../images/sale/volonter.webp";
 import "./Shares.scss";
 
 export const Shares = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
-import preview1 from "../../images/preview/preview1.jpg";
-import preview6 from "../../images/preview/preview6.jpg";
-import preview2 from "../../images/preview/preview2.jpg";
-import preview4 from "../../images/preview/preview4.jpg";
-import preview5 from "../../images/preview/preview5.jpg";
+import preview1 from "../../images/preview/preview1.webp";
+import preview6 from "../../images/preview/preview6.webp";
+import preview2 from "../../images/preview/preview2.webp";
+import preview4 from "../../images/preview/preview4.webp";
+import preview5 from "../../images/preview/preview5.webp";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import "./Preview.scss";

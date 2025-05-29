@@ -1,11 +1,11 @@
 // for carousel services on home page
-import service1 from "./images/slider/1.jpg";
-import service2 from "./images/slider/2.jpg";
-import service3 from "./images/slider/3.jpg";
-import service4 from "./images/slider/4.jpg";
-import service5 from "./images/slider/5.jpg";
-import service6 from "./images/slider/6.jpg";
-import service8 from "./images/slider/8.jpg";
+import service1 from "./images/slider/1.webp";
+import service2 from "./images/slider/2.webp";
+import service3 from "./images/slider/3.webp";
+import service4 from "./images/slider/4.webp";
+import service5 from "./images/slider/5.webp";
+import service6 from "./images/slider/6.webp";
+import service8 from "./images/slider/8.webp";
 
 // for carousel cars models in home page
 import audi from "./images/car-models/audi.png";
@@ -26,27 +26,27 @@ import toyota from "./images/car-models/toyota.png";
 import volkswagen from "./images/car-models/volkswagen.png";
 
 // for list-services for service page
-import motor from "./images/list-services/motor.jpg";
-import kpp from "./images/list-services/kpp.jpg";
-import oil from "./images/list-services/oil.jpg";
-import petrol from "./images/list-services/petrol.jpg";
-import holod from "./images/list-services/holod.jpg";
-import hodovka from "./images/list-services/hodovka.jpg";
-import halma from "./images/list-services/halma.jpg";
-import sczepleniya from "./images/list-services/sczepleniya.jpg";
-import ruleveKeruvannya from "./images/list-services/ruleve-keruvannya.jpg";
-import pokupka from "./images/list-services/diagnostika-avto-pered-pokupkoj.jpg";
-import comp from "./images/list-services/diagnostika.jpg";
-import diagnoctickpp from "./images/list-services/diagnostika-korobki-peredach.jpg";
-import exhaust from "./images/list-services/exhaust.jpg";
+import motor from "./images/list-services/motor.webp";
+import kpp from "./images/list-services/kpp.webp";
+import oil from "./images/list-services/oil.webp";
+import petrol from "./images/list-services/petrol.webp";
+import holod from "./images/list-services/holod.webp";
+import hodovka from "./images/list-services/hodovka.webp";
+import halma from "./images/list-services/halma.webp";
+import sczepleniya from "./images/list-services/sczepleniya.webp";
+import ruleveKeruvannya from "./images/list-services/ruleve-keruvannya.webp";
+import pokupka from "./images/list-services/diagnostika-avto-pered-pokupkoj.webp";
+import comp from "./images/list-services/diagnostika.webp";
+import diagnoctickpp from "./images/list-services/diagnostika-korobki-peredach.webp";
+import exhaust from "./images/list-services/exhaust.webp";
 
 // advantage images
-import a1 from "./images/advantage/1.png";
-import a2 from "./images/advantage/2.png";
-import a3 from "./images/advantage/3.png";
-import a4 from "./images/advantage/4.png";
-import a5 from "./images/advantage/5.png";
-import a6 from "./images/advantage/6.png";
+import a1 from "./images/advantage/1.webp";
+import a2 from "./images/advantage/2.webp";
+import a3 from "./images/advantage/3.webp";
+import a4 from "./images/advantage/4.webp";
+import a5 from "./images/advantage/5.webp";
+import a6 from "./images/advantage/6.webp";
 
 export const items = [
 	{
