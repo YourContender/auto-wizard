@@ -1,5 +1,4 @@
 import React from 'react';
-import preview1 from "../../images/preview/preview1.webp";
 import preview6 from "../../images/preview/preview6.webp";
 import preview2 from "../../images/preview/preview2.webp";
 import preview4 from "../../images/preview/preview4.webp";
@@ -53,14 +52,6 @@ export const Preview = () => {
                 <div className="preview__container-right">
                     <img src={preview5} alt="" className="preview-desktop"/>
                     <img src={preview4} alt="" className="preview-mobile"/>
-                    {/* <div className="preview__container-right-wrap">
-                        <div className="preview__container-right-title">
-                            <h2>Увага до кожної дрібниці</h2>
-                        </div>
-                        <div className="preview__container-right-text">
-                            <span>Ми приділяємо увагу кожній дрібниці, щоб виявити потенційну проблему до того, як вона може нашкодити.</span>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </div>
