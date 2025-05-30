@@ -6,7 +6,7 @@ import "./Shares.scss";
 
 export const Shares = () => {
     return (
-        <div className="shares">
+        <section className="shares">
             <div className="shares__container">
                 <div className="shares__container-list">
                     <div className="shares__container-list-item">
@@ -23,13 +23,13 @@ export const Shares = () => {
                             {/* <button className="shares__container-list-item-text-btn">Звернутися до нас</button> */}
                         </div>
                         <div className="shares__container-list-item-img">
-                            <img src={diagnostika} alt="" />
+                            <img src={diagnostika} alt="image" />
                         </div>
                     </div>
 
                     <div className="shares__container-list-item reverse">
                         <div className="shares__container-list-item-img">
-                            <img src={hovodka} alt="" />
+                            <img src={hovodka} alt="image" />
                         </div>
                         <div className="shares__container-list-item-text">
                             <h2 className="shares__container-list-item-text-title">
@@ -55,8 +55,8 @@ export const Shares = () => {
                                 військових автівок має бути швидким та якісним, тому таким авто буде надано найвищий пріорітет.
                             </span>
                         </div>
-                        <div className="shares__container-list-item-img">
-                            <img src={volonter} alt="" />
+                        <div className="shares__container-list-item-img" loading="lazy">
+                            <img src={volonter} alt="image" />
                         </div>
                     </div>
                 </div>
@@ -64,6 +64,6 @@ export const Shares = () => {
                     <button>Замовити зворотній виклик</button>
                 </div> */}
             </div>
-        </div>
+        </section>
     )
 }

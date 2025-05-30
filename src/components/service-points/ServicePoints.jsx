@@ -15,7 +15,7 @@ const services = [
 
 export const ServicePoints = () => {
     return (
-        <div className="service">
+        <section className="service">
             <div className="service-container">
                 <div className="service-title">
                     <h2>Послуги автосервісу</h2>
@@ -29,6 +29,6 @@ export const ServicePoints = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

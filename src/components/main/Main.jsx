@@ -3,13 +3,18 @@ import "./Main.scss";
 
 export const Main = () => {
     return (
-        <div className="main">
+        <main className="main">
+            <img
+                src="/images/main-bg.webp"
+                alt="СТО AutoWizard"
+                className="main__bg"
+            />
+            <div className="main__overlay" />
             <div className="main_container">
                 <div className="main_container-wrap">
                     <div className="main_container-wrap-block">
                         <h1 className="main_container-wrap-block-name">СТО "AutoWizard"</h1>
                         <h1 className="main_container-wrap-block-address">м. Дніпро, пров. Самаркандський, 2</h1>
-                        {/* <h1>Професійне технічне обслуговування автомобілів</h1> */}
                         <span>Ремонт будь-якої складності – це не проблема, а завдання, яке ми вирішимо швидко та професійно!</span>
                         <div className="main_container-wrap-block-btns">
                             <Link to="/price" className="main_container-wrap-block-btns-services">Наші ціни</Link>
@@ -18,6 +23,6 @@ export const Main = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
+        </main>
+    );
+};

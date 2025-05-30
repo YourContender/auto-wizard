@@ -6,13 +6,7 @@ import { Contact } from '../contact/Contact';
 export const ListServices = ({ list, types }) => {
 
     return (
-        <div className="list-services">
-            {/* <div className="list-services__bg">
-                <div className="list-services__bg-title">
-                    <h1>Послуги нашого автосервісу</h1>
-                    <Link className="list-services__bg-title-link" to="/">Головна / <p>Послуги</p></Link>
-                </div>
-            </div> */}
+        <section className="list-services">
             <div className="list-services__container">
                 <div className="list-services__container-list">
                     {
@@ -22,7 +16,7 @@ export const ListServices = ({ list, types }) => {
                                     return (
                                         <div className="list-services__container-list-item" key={index}>
                                             <div className="list-services-img">
-                                                <img src={item.image} alt="" />
+                                                <img src={item.image} alt="image" />
                                             </div>
                                             
                                             <div className="list-services-subtitle">
@@ -46,6 +40,6 @@ export const ListServices = ({ list, types }) => {
                 </div>
             </div>
             <Contact/>
-        </div>
+        </section>
     )
 }

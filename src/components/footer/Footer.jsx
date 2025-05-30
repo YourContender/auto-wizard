@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="footer__container">
                 <div className="footer__container-info">
                     <h4>Інформація</h4>
@@ -77,6 +77,6 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }

@@ -6,7 +6,7 @@ import { FeedbackForms } from './feedback-forms/FeedbackForms';
 
 export const Feedback = () => {
     return (  
-        <div className="feedback">
+        <section className="feedback">
             <div className="feedback__container">
                 
                 <div className="feedback__container-block">
@@ -80,6 +80,6 @@ export const Feedback = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     ) 
 }

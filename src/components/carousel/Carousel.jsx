@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Carousel = ({ items }) => {
     return (
-        <div className="carousel-container">
+        <section className="carousel-container">
             <div className="carousel-container">
                 <h1>Основні напрямки нашої роботи:</h1>
             </div>
@@ -37,7 +37,7 @@ const Carousel = ({ items }) => {
                 {items.map((item, index) => (
                     <SwiperSlide key={index}>
                         <div className="carousel-item">
-                            <img src={Object.values(item.image)} alt={item.title} className="carousel-image" />
+                            <img src={Object.values(item.image)} alt={item.title} className="carousel-image" loading="lazy"/>
                             <Link to={item.path} className="carousel-title">
                                 <h1>{item.title}</h1>
                                 <svg 
@@ -62,7 +62,7 @@ const Carousel = ({ items }) => {
             <div className="carousel-btn">
                 <Link className="carousel-btn-road" to="/repair">Перейти до послуг ремонту</Link>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -4,7 +4,7 @@ import "./Advantage.scss";
 
 export const Advantage = () => {
     return (
-        <div className="advantage">
+        <section className="advantage">
             <div className="advantage-title">
                 <h2>Переваги нашого автосервісу</h2>
             </div>
@@ -30,6 +30,6 @@ export const Advantage = () => {
                     })
                 }
             </div>
-        </div>
+        </section>
     )
 }

@@ -4,7 +4,7 @@ export const ListServicesItem = () => {
     return (
         <div className="list-services__container-list-item">
             <div className="list-services-img">
-                <img src={motor} alt="" />
+                <img src={motor} alt="image" />
             </div>
             
             <div className="list-services-subtitle">

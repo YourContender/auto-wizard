@@ -9,7 +9,7 @@ import { PreviewPoints } from './preview-poitns/PreviewPoints';
 
 export const Preview = () => {
     return (
-        <div className="preview">
+        <section className="preview">
             <div className="preview__container">
                 <div className="preview__container-left">
                     <div className="preview__container-left-name">
@@ -26,8 +26,8 @@ export const Preview = () => {
                     </div>
 
                     <div className="preview__container-left-block">
-                        <img src={preview2} alt="" className="preview-desktop"/>
-                        <img src={preview6} alt="" className="preview-mobile"/>
+                        <img src={preview2} alt="image" className="preview-desktop" loading="lazy"/>
+                        <img src={preview6} alt="image" className="preview-mobile" loading="lazy"/>
                         <div className="preview__container-left-block-descr">
                             <h2>
                                 Ми молода, амбітна та досить досвідчена команда майстрів
@@ -50,10 +50,10 @@ export const Preview = () => {
                     </div>
                 </div>
                 <div className="preview__container-right">
-                    <img src={preview5} alt="" className="preview-desktop"/>
-                    <img src={preview4} alt="" className="preview-mobile"/>
+                    <img src={preview5} alt="image" className="preview-desktop" loading="lazy"/>
+                    <img src={preview4} alt="image" className="preview-mobile" loading="lazy"/>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

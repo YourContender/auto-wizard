@@ -4,7 +4,7 @@ import "./Navigation.scss";
 
 export const Navigation = ({ title, position, secondPosition, path }) => {
     return (
-        <div className="navigation">
+        <nav className="navigation">
             <div className="navigation_container">
                 <div className="navigation-title">
                     <h2>{title}</h2>
@@ -23,6 +23,6 @@ export const Navigation = ({ title, position, secondPosition, path }) => {
                         </div>
                 }
             </div>
-        </div>
+        </nav>
     )
 }

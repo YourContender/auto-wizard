@@ -4,7 +4,7 @@ import { GoogleMap } from '../google-map/GoogleMap';
 
 export const Contact = () => {
     return (
-        <div className="contact">
+        <section className="contact">
             <div className="contact__container">
                 <div className="contact__container-content">
                     <div className="contact__container-content-list">
@@ -120,6 +120,6 @@ export const Contact = () => {
                     <GoogleMap className="map-google-adaptive" width="600px" height="600px" />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -7,7 +7,7 @@ import "./CarModels.scss";
 
 export const CarModels = ({ items }) => {
     return (
-        <div className="models-container">
+        <section className="models-container">
             <Swiper
                 modules={[Pagination, Autoplay]}
                 spaceBetween={20}
@@ -33,12 +33,12 @@ export const CarModels = ({ items }) => {
                 {items.map((item, index) => (
                     <SwiperSlide key={index}>
                         <div className="models-item">
-                            <img src={item} alt="models" className="models-image" />
+                            <img src={item} alt="models" className="models-image" loading="lazy"/>
                             {/* <div className="carousel-shadow-block"></div> */}
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </div>
+        </section>
     );
 };

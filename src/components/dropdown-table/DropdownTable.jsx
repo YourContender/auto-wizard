@@ -9,7 +9,7 @@ export const DropdownTable = ({ data, title, descr }) => {
     };
 
     return (
-        <div className="dropdown-table">
+        <section className="dropdown-table">
             <div className="dropdown-table-price">
                 {/* <div className="dropdown-table-price-title">
                     <h1>{title}</h1>
@@ -51,6 +51,6 @@ export const DropdownTable = ({ data, title, descr }) => {
                     )}
                 </div>
             ))}
-        </div>
+        </section>
     );
 };

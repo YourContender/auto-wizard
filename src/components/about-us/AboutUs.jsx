@@ -6,14 +6,7 @@ import { Advantage } from '../advantage/Advantage';
 
 export const AboutUs = () => {
     return (
-        <div className="about">
-            {/* <div className="about__bg">
-                <div className="about__bg-title">
-                    <h1>Про нас</h1>
-                    <Link className="about__bg-title-link" to="/">Головна / <p>Про нас</p></Link>
-                </div>
-            </div> */}
-
+        <section className="about">
             <div className="about__content">
                 <div className="about__content-descr">
                     <span>
@@ -42,6 +35,6 @@ export const AboutUs = () => {
             <div className="about__advantage">
                 <Advantage/>
             </div>
-        </div>
+        </section>
     )
 }

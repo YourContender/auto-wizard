@@ -15,18 +15,7 @@ export const SelectedService = ({ title }) => {
     };
 
     return (
-        <div className="selected">
-            {/* <div className="selected__bg">
-                <div className="selected__bg-title">
-                    <h1>{currentService[0].service}</h1>
-                    <Link 
-                        className="selected__bg-title-link" 
-                        to="/"
-                    >
-                        Головна / <Link className="selected__bg-title-link" to="/service"> Послуги </Link> / <p>{title}</p>
-                    </Link>
-                </div>
-            </div> */}
+        <section className="selected">
             <div className="selected__container">
                 {
                     currentService.map((item, index) => {
@@ -37,7 +26,7 @@ export const SelectedService = ({ title }) => {
                                     <button onClick={() => scrollToSection("price")}>Вартість послуг</button>
                                 </div>
                                 <div className="selected__container-wrap-img">
-                                    <img src={item.image} alt="" />
+                                    <img src={item.image} alt="image" />
                                 </div>
                             </div>
                         )
@@ -72,6 +61,6 @@ export const SelectedService = ({ title }) => {
                     </table>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
