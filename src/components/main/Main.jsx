@@ -4,11 +4,12 @@ import "./Main.scss";
 export const Main = () => {
     return (
         <main className="main">
-            <img
-                src="/images/main-bg.webp"
-                alt="СТО AutoWizard"
-                className="main__bg"
-            />
+            <picture>
+                <source srcSet="/images/main-bg2-mobile.webp" media="(max-width: 600px)" />
+                <source srcSet="/images/main-bg2-tablet.webp" media="(max-width: 1024px)" />
+                <img src="/images/main-bg.webp" alt="СТО AutoWizard" className="main__bg" />
+            </picture>
+
             <div className="main__overlay" />
             <div className="main_container">
                 <div className="main_container-wrap">

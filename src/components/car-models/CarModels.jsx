@@ -19,13 +19,13 @@ export const CarModels = ({ items }) => {
                 }}
                 breakpoints={{
                     320: {
-                      slidesPerView: 2,
+                        slidesPerView: 2,
                     },
                     768: {
-                      slidesPerView: 4,
+                        slidesPerView: 4,
                     },
                     1024: {
-                      slidesPerView: 6,
+                        slidesPerView: 6,
                     },
                 }}
                 pagination={false}

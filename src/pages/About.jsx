@@ -3,7 +3,6 @@ import { Header } from '../components/header/Header';
 import { Footer } from '../components/footer/Footer';
 import { AboutUs } from '../components/about-us/AboutUs';
 import { Navigation } from '../components/navigation/Navigation';
-import { MiniContact } from '../components/contact/MiniContact';
 import { Contact } from '../components/contact/Contact';
 
 export const About = () => {

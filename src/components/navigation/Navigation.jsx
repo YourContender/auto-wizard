@@ -19,7 +19,7 @@ export const Navigation = ({ title, position, secondPosition, path }) => {
                         :
                         <div className="navigation-items">
                             <Link to="/" className="navigation-item">Головна / </Link>
-                            <Link className="navigation-item child">{position}</Link>
+                            <Link to={path} className="navigation-item child">{position}</Link>
                         </div>
                 }
             </div>

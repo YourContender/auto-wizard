@@ -20,7 +20,6 @@ export const Shares = () => {
                                 через які Ви звернулися до нас, ми додатково та безкоштовно проведемо комп'ютерну 
                                 діагностику та надамо детальний звіт. Наша команда цінує клієнтів та їх безпеку на дорозі.
                             </span>
-                            {/* <button className="shares__container-list-item-text-btn">Звернутися до нас</button> */}
                         </div>
                         <div className="shares__container-list-item-img">
                             <img src={diagnostika} alt="image" />
@@ -60,9 +59,6 @@ export const Shares = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className="shares__container-list-item-text-btn">
-                    <button>Замовити зворотній виклик</button>
-                </div> */}
             </div>
         </section>
     )

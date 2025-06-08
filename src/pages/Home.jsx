@@ -1,7 +1,6 @@
 import React from 'react'
 import { Header } from '../components/header/Header'
 import { Main } from '../components/main/Main'
-import { Shares } from '../components/shares/Shares'
 import { Preview } from '../components/preview/Preview'
 import Carousel from '../components/carousel/Carousel'
 import { Feedback } from '../components/feedback/Feedback'

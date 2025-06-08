@@ -1,6 +1,5 @@
 import React from 'react';
 import about from "../../images/about.webp"
-import { Link } from 'react-router-dom';
 import "./AboutUs.scss";
 import { Advantage } from '../advantage/Advantage';
 
