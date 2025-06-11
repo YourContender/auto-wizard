@@ -54,7 +54,6 @@ export const Header = () => {
                     </Link>
                 </nav>
 
-                {/* Телефон */}
                 <div className="header__phone" type="tel">
                     {/* <FontAwesomeIcon icon={faPhoneVolume} /> */}
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img"
@@ -64,7 +63,6 @@ export const Header = () => {
                     <span>(097) 058-29-18</span>
                 </div>
 
-                {/* Бургер */}
                 <div
                     className={`header__burger ${isMenuOpen ? "open" : ""}`}
                     onClick={toggleMenu}
@@ -75,7 +73,6 @@ export const Header = () => {
                 </div>
             </div>
 
-            {/* Боковое меню */}
             <div className={`header__side-menu ${isMenuOpen ? "open" : ""}`}>
                 <nav className="header__side-menu-nav">
                     <div className="header__side-logo">
@@ -117,7 +114,6 @@ export const Header = () => {
                 </div>
             </div>
 
-            {/* Фон для закрытия меню */}
             {isMenuOpen && <div className="header__backdrop" onClick={toggleMenu}></div>}
         </header>
     );

@@ -72,6 +72,8 @@
                         align-items: center;
                         a {
                             margin-left: 10px;
+                            text-decoration: none;
+                            color: #fff;
                         }
                         svg {
                             color: rgb(194, 37, 37);
@@ -93,6 +95,12 @@
                 width: 550px;
                 &-phone {
                     display: none;
+                    &-number {
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                    }
                 }
                 &-wrap {
                     margin-top: 40px;
