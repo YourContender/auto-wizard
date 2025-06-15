@@ -7,10 +7,10 @@ import point4 from "../../images/points/500px-4.webp"
 import { Link } from 'react-router-dom';
 
 const services = [
-    { title: "Ремонт", img: point1, path: "/repair" },
-    { title: "Діагностика", img: point3, path: "/diagnostica" },
-    { title: "Технічне обслуговування", img: point2, path: "/tehobsluzhivanie" },
-    { title: "Акційні пропозиції", img: point4, path: "/sale" },
+    { title: "Ремонт", img: point1, path: "/repair", alt: "Ілюстрація до ремонту автомобіля" },
+    { title: "Діагностика", img: point3, path: "/diagnostica", alt: "Ілюстрація до діагностики автомобіля" },
+    { title: "Технічне обслуговування", img: point2, path: "/tehobsluzhivanie", alt: "Ілюстрація до технічного обслуговування автомобіля" },
+    { title: "Акційні пропозиції", img: point4, path: "/sale", alt: "Ілюстрація до акційних пропозицій автосервісу" },
 ];
 
 export const ServicePoints = () => {
@@ -23,7 +23,7 @@ export const ServicePoints = () => {
                 <div className="service-list">
                     {services.map((service, index) => (
                         <Link to={service.path} key={index} className="service-card">
-                            <img src={service.img} alt={service.title} className="service-img" />
+                            <img src={service.img} alt={service.alt} className="service-img" />
                             <div className="service-subtitle">{service.title}</div>
                         </Link>
                     ))}

@@ -11,9 +11,6 @@ export const DropdownTable = ({ data, title, descr }) => {
     return (
         <section className="dropdown-table">
             <div className="dropdown-table-price">
-                {/* <div className="dropdown-table-price-title">
-                    <h1>{title}</h1>
-                </div> */}
                 <div className="dropdown-table-price-descr">
                     <span>
                         {descr}
