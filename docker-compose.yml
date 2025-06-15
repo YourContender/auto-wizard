@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    image: aw-app
+    container_name: aw-app
+    ports:
+      - "5173:5173"
